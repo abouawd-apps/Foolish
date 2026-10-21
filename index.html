@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الدليل العملي الشامل لتصبح غبياً 🤡 | أخبار الحمقى والمغفلين</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            arabic: ['Cairo', 'sans-serif'],
+            english: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+              800: '#92400e',
+              900: '#78350f',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Typography adaptation based on document direction */
+    html[dir="rtl"] body {
+      font-family: 'Cairo', sans-serif;
+    }
+    html[dir="ltr"] body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Subtle Arabesque / Geometric Background Pattern */
+    .bg-heritage-pattern {
+      background-image: radial-gradient(rgba(245, 158, 11, 0.12) 1.5px, transparent 1.5px),
+                        radial-gradient(rgba(99, 102, 241, 0.08) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.1);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(245, 158, 11, 0.5);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(245, 158, 11, 0.8);
+    }
+
+    /* Bird Animation in Simulation */
+    @keyframes floatBird {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(4deg); }
+    }
+    .bird-floating {
+      animation: floatBird 2.6s ease-in-out infinite;
+    }
+
+    @keyframes flyAway {
+      0% { transform: translate(0, 0) scale(1); opacity: 1; }
+      100% { transform: translate(-120px, -110px) scale(0.4); opacity: 0; }
+    }
+    .bird-escaped {
+      animation: flyAway 1.4s ease-in forwards;
+    }
+
+    /* Gate Slam Animation */
+    .gate-door {
+      transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Smooth Card Hover Effects */
+    .interactive-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .interactive-card:hover {
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+
+<body class="bg-amber-50/40 dark:bg-slate-950 text-slate-800 dark:text-slate-100 bg-heritage-pattern min-h-screen transition-colors duration-300 selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- Custom Notification Toast -->
+  <div id="toast-container" class="fixed bottom-5 z-50 left-5 right-5 sm:left-auto sm:right-6 sm:w-96 pointer-events-none flex flex-col gap-2"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-white/85 dark:bg-slate-900/85 border-b border-amber-200/70 dark:border-slate-800 transition-colors duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Brand Logo & Title -->
+      <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-amber-500/25 group-hover:scale-105 transition-transform">
+          <span class="text-2xl" role="img" aria-label="clown">🤡</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span id="nav-badge" class="text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-300/50 dark:border-amber-700/50">
+              ابن الجوزي • 800 عام
+            </span>
+          </div>
+          <h1 id="nav-title" class="text-sm sm:text-lg font-extrabold bg-gradient-to-r from-slate-900 via-amber-800 to-amber-600 dark:from-white dark:via-amber-200 dark:to-amber-400 bg-clip-text text-transparent truncate max-w-[180px] sm:max-w-none">
+            الدليل العملي لتصبح غبياً
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-1 text-sm font-semibold">
+        <a href="#simulation-section" data-i18n="nav_sim" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">قصة الأمير والطائر</a>
+        <a href="#reasons-section" data-i18n="nav_reasons" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">لماذا أُلِّف الكتاب؟</a>
+        <a href="#anatomy-section" data-i18n="nav_anatomy" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">الأحمق والمجنون</a>
+        <a href="#strata-section" data-i18n="nav_strata" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">طبقات الحمقى</a>
+        <a href="#signs-section" data-i18n="nav_signs" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">العلامات الثلاث</a>
+        <a href="#matrix-section" data-i18n="nav_matrix" class="px-3 py-2 rounded-xl hover:bg-amber-100/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition">أصناف الناس</a>
+        <a href="#quiz-section" data-i18n="nav_quiz" class="px-3 py-2 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/30 hover:bg-amber-500/20 transition">اختبر حكمتك</a>
+      </nav>
+
+      <!-- Action Controls: Language Toggle, Theme Toggle, YouTube Link -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Language Toggle Button -->
+        <button id="lang-toggle-btn" onclick="toggleLanguage()" class="flex items-center gap-2 px-3.5 py-2 rounded-xl font-bold text-xs sm:text-sm bg-slate-100 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 transition shadow-sm" title="Switch Language / تغيير اللغة">
+          <i class="fa-solid fa-earth-americas text-amber-500"></i>
+          <span id="lang-toggle-text">English</span>
+        </button>
+
+        <!-- Dark/Light Theme Toggle Button -->
+        <button id="theme-toggle-btn" onclick="toggleTheme()" class="w-10 h-10 rounded-xl flex items-center justify-center bg-slate-100 dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-slate-700 text-slate-700 dark:text-amber-400 border border-slate-200 dark:border-slate-700 transition shadow-sm" aria-label="Toggle Theme">
+          <i id="theme-icon" class="fa-solid fa-sun text-lg"></i>
+        </button>
+
+        <!-- Original Video Link -->
+        <a href="https://youtu.be/s1qOKHPVbrE" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-700 text-white shadow-md shadow-red-600/20 transition">
+          <i class="fa-brands fa-youtube text-base"></i>
+          <span data-i18n="watch_video_short">الفيديو الأصلي</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile Scrollable Quick Nav -->
+    <div class="xl:hidden flex items-center gap-2 overflow-x-auto px-4 py-2 border-t border-slate-200/60 dark:border-slate-800/80 text-xs font-bold whitespace-nowrap bg-white/50 dark:bg-slate-900/50">
+      <a href="#simulation-section" data-i18n="nav_sim" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">قصة الأمير والطائر</a>
+      <a href="#reasons-section" data-i18n="nav_reasons" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">لماذا أُلِّف الكتاب؟</a>
+      <a href="#anatomy-section" data-i18n="nav_anatomy" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">الأحمق والمجنون</a>
+      <a href="#strata-section" data-i18n="nav_strata" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">طبقات الحمقى</a>
+      <a href="#signs-section" data-i18n="nav_signs" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">العلامات الثلاث</a>
+      <a href="#matrix-section" data-i18n="nav_matrix" class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">أصناف الناس</a>
+      <a href="#quiz-section" data-i18n="nav_quiz" class="px-2.5 py-1 rounded-lg bg-amber-500 text-slate-950">اختبر حكمتك</a>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20 space-y-20">
+
+    <!-- ==========================================
+         1. HERO & PRINCE BIRD GATE SIMULATION [00:00]
+         ========================================== -->
+    <section id="hero" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-white via-amber-50/70 to-orange-50/50 dark:from-slate-900 dark:via-slate-900 dark:to-indigo-950/60 border border-amber-200/80 dark:border-slate-800 shadow-2xl p-6 sm:p-10 lg:p-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        
+        <!-- Left/Right Hero Text Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 dark:bg-amber-500/10 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs sm:text-sm font-bold">
+            <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+            <span data-i18n="hero_channel_tag">مبني على فيديو قناة Abouawd Studio • كتاب أخبار الحمقى والمغفلين</span>
+          </div>
+
+          <h2 id="hero-main-title" data-i18n="hero_title" class="text-3xl sm:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+            الدليل العملي الشامل لتصبح غبياً 🤡
+          </h2>
+
+          <p data-i18n="hero_subtitle" class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            قبل أكثر من <span class="font-bold text-amber-600 dark:text-amber-400">800 عام</span>، قرر الإمام العالم أبو الفرج ابن الجوزي (عالم الفقه والحديث والتفسير والتاريخ) تأليف كتاب فريد من نوعه: <strong class="text-slate-900 dark:text-white">«أخبار الحمقى والمغفلين»</strong>. لم يكن الهدف مجرد السخرية، بل تقديم مرآة فلسفية عميقة تكشف كيف يمكن لصاحب العقل والمنصب أن يتصرف بحماقة تامة!
+          </p>
+
+          <!-- Key Quote Callout -->
+          <div class="p-4 sm:p-5 rounded-2xl bg-white/80 dark:bg-slate-800/80 border-s-4 border-amber-500 shadow-sm">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-quote-right text-2xl text-amber-500 mt-1 shrink-0"></i>
+              <div>
+                <p data-i18n="hero_definition_quote" class="font-bold text-slate-800 dark:text-slate-100 text-sm sm:text-base">
+                  «الحماقة ليست فقدان العقل، بل هي إرادة الوصول إلى هدف صحيح.. لكن باستخدام وسيلة خاطئة تماماً!»
+                </p>
+                <span data-i18n="hero_definition_author" class="text-xs text-amber-700 dark:text-amber-400 font-semibold mt-1 block">
+                  — تعريف الإمام ابن الجوزي للحماقة [00:02:04]
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#anatomy-section" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-amber-500/25 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-compass"></i>
+              <span data-i18n="btn_start_journey">ابدأ الرحلة التفاعلية</span>
+            </a>
+
+            <a href="https://youtu.be/s1qOKHPVbrE" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:opacity-90 font-bold text-sm sm:text-base flex items-center gap-2 transition shadow-md">
+              <i class="fa-brands fa-youtube text-red-500 text-lg"></i>
+              <span data-i18n="btn_watch_yt">مشاهدة الفيديو على يوتيوب</span>
+            </a>
+
+            <a href="#chapters-section" class="px-4 py-3.5 rounded-2xl bg-white dark:bg-slate-800 hover:bg-amber-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-semibold text-sm flex items-center gap-2 transition">
+              <i class="fa-solid fa-clock-rotate-left text-amber-500"></i>
+              <span data-i18n="btn_chapters">فصول الفيديو</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Simulation Box: The Prince, The Bird & The City Gates [00:00:00] -->
+        <div id="simulation-section" class="lg:col-span-5 bg-slate-900 text-white rounded-3xl p-5 sm:p-6 border border-slate-700/80 shadow-2xl relative overflow-hidden">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold flex items-center gap-1.5">
+              <i class="fa-solid fa-gamepad"></i>
+              <span data-i18n="sim_badge">محاكاة القصة الافتتاحية [00:00]</span>
+            </span>
+            <button onclick="resetBirdSim()" class="text-xs text-slate-400 hover:text-white flex items-center gap-1 bg-slate-800 px-2.5 py-1 rounded-lg transition">
+              <i class="fa-solid fa-rotate-right"></i>
+              <span data-i18n="sim_reset">إعادة</span>
+            </button>
+          </div>
+
+          <h3 data-i18n="sim_title" class="text-lg sm:text-xl font-extrabold text-white mb-1">
+            موقف الأمير والطائر الصغير 🐦🏰
+          </h3>
+          <p data-i18n="sim_desc" class="text-xs sm:text-sm text-slate-300 mb-4 leading-relaxed">
+            دخل طائر جميل إلى البستان وأراد الأمير ألا يطير الطائر ويهرب. لو كنت مكان هذا الأمير، ما هي الوسيلة التي ستختارها؟
+          </p>
+
+          <!-- Visual Stage for the City Gate & Sky -->
+          <div class="relative h-48 rounded-2xl bg-gradient-to-b from-sky-900 via-indigo-950 to-slate-900 border border-slate-700 overflow-hidden mb-4 flex flex-col justify-between p-4">
+            <!-- Clouds & Sky Elements -->
+            <div class="flex justify-between items-start text-sky-300/30 text-2xl select-none">
+              <i class="fa-solid fa-cloud"></i>
+              <span id="sky-status-badge" class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                السماء مفتوحة 🌤️
+              </span>
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <!-- Center Bird & Tree -->
+            <div class="relative flex flex-col items-center justify-center my-auto z-10">
+              <div id="sim-bird" class="bird-floating text-4xl sm:text-5xl transition-all duration-500 select-none cursor-pointer" onclick="pokeBird()">
+                🐦
+              </div>
+              <div id="sim-cage-overlay" class="hidden absolute -inset-2 border-4 border-emerald-400 rounded-2xl bg-emerald-950/30 flex items-center justify-center">
+                <span class="px-2 py-0.5 bg-emerald-500 text-slate-950 font-black text-[10px] rounded">في القفص بأمان ✅</span>
+              </div>
+              <span class="text-xs text-amber-200/80 mt-1 font-semibold" id="bird-caption">الطائر يقف على الشجرة</span>
+            </div>
+
+            <!-- City Walls & Gates at Bottom -->
+            <div class="relative z-20 flex items-end justify-between border-t-4 border-amber-700/60 bg-slate-800/90 -mx-4 -mb-4 px-4 py-2.5">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-archway text-amber-400 text-lg"></i>
+                <span id="gate-status-label" class="text-xs font-bold text-slate-200">أبواب المدينة: مفتوحة للتجار والناس 🚶‍♂️🐪</span>
+              </div>
+              <span id="gate-lock-icon" class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold">مفتوحة 🔓</span>
+            </div>
+
+            <!-- Giant Slamming City Gates Overlay when "Close City Gates" is clicked -->
+            <div id="city-gate-overlay" class="pointer-events-none opacity-0 transition-opacity duration-500 absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-red-950/95 via-amber-950/90 to-transparent flex flex-col items-center justify-end pb-3 border-t-4 border-red-500 z-10">
+              <div class="text-xs font-extrabold text-red-200 bg-red-900/90 px-3 py-1 rounded-full border border-red-400 shadow-lg">
+                🚧 أُغلقت أبواب المدينة بالكامل! (والطائر يطير في السماء 😂)
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulation Action Choices -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-4">
+            <button onclick="runBirdSimulation('foolish')" class="p-3 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/40 text-start transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-lg">🏰🔒</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-red-500/30 text-red-200" data-i18n="sim_choice1_tag">قرار الأمير الأحمق</span>
+              </div>
+              <div data-i18n="sim_choice1_title" class="font-bold text-xs sm:text-sm text-white mt-1 group-hover:text-red-200">
+                أغلقوا أبواب المدينة فوراً!
+              </div>
+            </button>
+
+            <button onclick="runBirdSimulation('wise')" class="p-3 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-start transition group">
+              <div class="flex items-center justify-between">
+                <span class="text-lg">🪤🌾</span>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/30 text-emerald-200" data-i18n="sim_choice2_tag">قرار العاقل الحكيم</span>
+              </div>
+              <div data-i18n="sim_choice2_title" class="font-bold text-xs sm:text-sm text-white mt-1 group-hover:text-emerald-200">
+                استخدم قفصاً وحبوباً لصيده
+              </div>
+            </button>
+          </div>
+
+          <!-- Diagnostic Meters (Goal vs. Method) -->
+          <div id="sim-result-box" class="p-3.5 rounded-2xl bg-slate-800/90 border border-slate-700 space-y-2.5 text-xs">
+            <div class="flex justify-between items-center">
+              <span data-i18n="sim_meter_goal" class="text-slate-300 font-semibold">صحة الهدف (منع الطائر من الهرب):</span>
+              <span class="font-bold text-emerald-400">100% ✅</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span data-i18n="sim_meter_method" class="text-slate-300 font-semibold">حكمة الوسيلة المختارة:</span>
+              <span id="sim-method-score" class="font-bold text-amber-400" data-i18n="sim_waiting">بانتظار قرارك...</span>
+            </div>
+            <p id="sim-feedback-text" data-i18n="sim_default_feedback" class="text-slate-300 pt-1 border-t border-slate-700 leading-relaxed">
+              اختر أحد القرارين بالأعلى لترى كيف يحلل ابن الجوزي الفرق بين الهدف والوسيلة!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. WHY IBN AL-JAWZI WROTE THE BOOK [00:00:45 - 00:01:54]
+         ========================================== -->
+    <section id="reasons-section" class="space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-xs font-extrabold uppercase tracking-wider" data-i18n="sec2_badge">
+          فلسفة الكتاب • [00:00:45 - 00:01:54]
+        </span>
+        <h2 data-i18n="sec2_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+          لماذا يكتب إمام عظيم كتاباً عن الحمقى؟ 🤔📜
+        </h2>
+        <p data-i18n="sec2_desc" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          قد يتساءل القارئ: كيف لعالم جليل في الفقه والحديث والتفسير والتاريخ مثل الإمام أبي الفرج ابن الجوزي أن يخصص كتاباً كاملاً لأخبار الحمقى والمغفلين؟ في مقدمة الكتاب، يحدد ابن الجوزي <strong class="text-amber-600 dark:text-amber-400">ثلاثة أهداف رئيسية</strong> بالغة الحكمة:
+        </p>
+      </div>
+
+      <!-- 3 Interactive Reason Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Reason 1 -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-amber-200/80 dark:border-slate-800 p-6 sm:p-7 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 end-0 w-28 h-28 bg-amber-500/10 rounded-bl-full -z-0 transition-transform group-hover:scale-125"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/15 dark:bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-600 dark:text-amber-400 text-2xl font-black">
+              1
+            </div>
+            <h3 data-i18n="r1_title" class="text-xl font-extrabold text-slate-900 dark:text-white">
+              معرفة قيمة نعمة العقل 🧠✨
+            </h3>
+            <p data-i18n="r1_desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+              أن يعرف الإنسان العاقل قدر نعمة الله عليه بالعقل؛ فالأشياء تُعرف بأضدادها، وحين يرى العاقل أفعال الحمقى يحمد الله على سلامة فكره وتدبيره.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-amber-600 dark:text-amber-400">
+            <span data-i18n="r1_footer">«وبضدها تتميز الأشياء»</span>
+            <i class="fa-solid fa-brain text-base"></i>
+          </div>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-indigo-200/80 dark:border-slate-800 p-6 sm:p-7 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 end-0 w-28 h-28 bg-indigo-500/10 rounded-bl-full -z-0 transition-transform group-hover:scale-125"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-indigo-500/15 dark:bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-2xl font-black">
+              2
+            </div>
+            <h3 data-i18n="r2_title" class="text-xl font-extrabold text-slate-900 dark:text-white">
+              تحذير الذكي من الغفلة ⚠️🛡️
+            </h3>
+            <p data-i18n="r2_desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+              تحذير الإنسان الذكي من الوقوع في أسباب الغفلة والحماقة؛ فالذكاء وحده لا يعصم صاحبه إذا تسرّع أو اغترّ بنفسه، لذا كانت قصصهم عبرة ووقاية.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-indigo-600 dark:text-indigo-400">
+            <span data-i18n="r2_footer">«السعيد من اتعظ بغيره»</span>
+            <i class="fa-solid fa-shield-halved text-base"></i>
+          </div>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-emerald-200/80 dark:border-slate-800 p-6 sm:p-7 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute top-0 end-0 w-28 h-28 bg-emerald-500/10 rounded-bl-full -z-0 transition-transform group-hover:scale-125"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 dark:bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-2xl font-black">
+              3
+            </div>
+            <h3 data-i18n="r3_title" class="text-xl font-extrabold text-slate-900 dark:text-white">
+              الترويح عن النفس من الجد 😊🌿
+            </h3>
+            <p data-i18n="r3_desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+              الترويح عن القلوب؛ لأن النفس البشرية تملّ وتكلّ من الجد المتواصل، وتحتاج إلى شيء من الطرائف المباحة لتستعيد نشاطها وحيويتها.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
+            <span data-i18n="r3_footer">«روّحوا القلوب ساعة بعد ساعة»</span>
+            <i class="fa-solid fa-face-laugh-beam text-base"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ANATOMY OF FOOLISHNESS: FOOL VS MADMAN [00:02:04 - 00:03:30]
+         ========================================== -->
+    <section id="anatomy-section" class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-xl space-y-10">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
+        <div class="space-y-2 max-w-2xl">
+          <span class="px-3 py-1 rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30 text-xs font-extrabold" data-i18n="sec3_badge">
+            التحليل الدقيق • [00:02:04 - 00:03:30]
+          </span>
+          <h2 data-i18n="sec3_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+            معادلة الحماقة: لماذا الأحمق أخطر من المجنون؟ ⚡
+          </h2>
+        </div>
+        <p data-i18n="sec3_subtitle" class="text-sm text-slate-500 dark:text-slate-400 max-w-md">
+          يصحح ابن الجوزي مفهوماً شائعاً: الغباء أو الحماقة ليست دائماً ضعفاً في الذاكرة أو بطئاً في الفهم، بل خلل في اختيار الوسيلة!
+        </p>
+      </div>
+
+      <!-- The Visual Equation of Foolishness -->
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-amber-500/10 via-orange-500/10 to-rose-500/10 border border-amber-500/30">
+        <h3 data-i18n="eq_heading" class="text-center text-sm font-extrabold uppercase tracking-wider text-amber-700 dark:text-amber-300 mb-6">
+          المعادلة الذهبية لتعريف الحماقة عند ابن الجوزي
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center text-center">
+          <!-- Part 1: Goal -->
+          <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-emerald-500/40 shadow-sm">
+            <div class="text-2xl mb-1">🎯✅</div>
+            <div data-i18n="eq_part1_title" class="font-extrabold text-emerald-600 dark:text-emerald-400 text-base">هدف صحيح ومشروع</div>
+            <p data-i18n="eq_part1_desc" class="text-xs text-slate-500 dark:text-slate-400 mt-1">النية سليمة والغاية مطلوبة</p>
+          </div>
+
+          <div class="text-2xl font-black text-slate-400">+</div>
+
+          <!-- Part 2: Means -->
+          <div class="p-4 rounded-2xl bg-white dark:bg-slate-800 border border-rose-500/40 shadow-sm">
+            <div class="text-2xl mb-1">🛠️❌</div>
+            <div data-i18n="eq_part2_title" class="font-extrabold text-rose-600 dark:text-rose-400 text-base">وسيلة خاطئة تماماً</div>
+            <p data-i18n="eq_part2_desc" class="text-xs text-slate-500 dark:text-slate-400 mt-1">طريقة تناقض الواقع والمنطق</p>
+          </div>
+
+          <div class="text-2xl font-black text-slate-400">=</div>
+
+          <!-- Part 3: Result -->
+          <div class="p-4 rounded-2xl bg-gradient-to-br from-amber-500 to-rose-600 text-white shadow-lg">
+            <div class="text-2xl mb-1">🤡💥</div>
+            <div data-i18n="eq_part3_title" class="font-black text-base">الحماقة الكارثية</div>
+            <p data-i18n="eq_part3_desc" class="text-xs text-amber-100 mt-1">إفساد من حيث أراد الإصلاح!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Comparison: The Madman vs. The Fool -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Card 1: The Madman (المجنون) -->
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-2xl">
+                🌀
+              </div>
+              <div>
+                <h3 data-i18n="madman_title" class="text-xl font-black text-slate-900 dark:text-white">المجنون (فاقد العقل)</h3>
+                <span data-i18n="madman_sub" class="text-xs text-emerald-600 dark:text-emerald-400 font-bold">خطره محدود ومعروف للناس</span>
+              </div>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-slate-200 dark:bg-slate-700 text-xs font-bold" data-i18n="madman_risk">خطر مجتمعي: منخفض</span>
+          </div>
+
+          <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 pt-2">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+              <span data-i18n="madman_p1">فقد عقله بالكامل، وحاله واضح للجميع فلا ينخدع به أحد.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+              <span data-i18n="madman_p2">مرفوع عنه القلم، ولا يُكلَّف بمسؤوليات أو مناصب قيادية.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+              <span data-i18n="madman_p3">لا يعينه أحد قاضياً أو أميراً أو مفتياً، لذا يظل أثره محصوراً.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card 2: The Fool (الأحمق) -->
+        <div class="rounded-2xl bg-rose-500/5 dark:bg-rose-950/20 border-2 border-rose-500/40 p-6 space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-500 flex items-center justify-center text-2xl">
+                🤡
+              </div>
+              <div>
+                <h3 data-i18n="fool_title" class="text-xl font-black text-slate-900 dark:text-white">الأحمق (يمتلك عقلاً ولا يحسن استخدامه)</h3>
+                <span data-i18n="fool_sub" class="text-xs text-rose-600 dark:text-rose-400 font-bold">الخطر الحقيقي على المجتمع!</span>
+              </div>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-rose-500 text-white text-xs font-bold animate-pulse" data-i18n="fool_risk">خطر مجتمعي: كارثي 🔥</span>
+          </div>
+
+          <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-200 pt-2">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1"></i>
+              <span data-i18n="fool_p1">يمتلك عقلاً ويتحدث بطلاقة وقد يحفظ الكتب، فيظنه الناس عاقلاً حكيماً!</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1"></i>
+              <span data-i18n="fool_p2">قد يتولى منصب <strong>قاضٍ أو حاكم أو عالم أو مسؤول</strong>، فيصبح قراره الأحمق أزمة عامة.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-triangle-exclamation text-rose-500 mt-1"></i>
+              <span data-i18n="fool_p3">يتحرك بثقة مفرطة ويصرّ على وسيلته الخاطئة، فيُفسد البلاد والعباد بنوايا حسنة!</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. SOCIAL STRATA EXPLORER (طبقات الحمقى الـ 6) [00:03:43 - 00:04:35]
+         ========================================== -->
+    <section id="strata-section" class="space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-indigo-500/15 text-indigo-700 dark:text-indigo-300 border border-indigo-500/30 text-xs font-extrabold uppercase tracking-wider" data-i18n="sec4_badge">
+          المفاجأة الكبرى في الكتاب • [00:03:43 - 00:04:35]
+        </span>
+        <h2 data-i18n="sec4_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+          المنصب والعلم الظاهري لا يمنعان الحماقة! 👑⚖️📚
+        </h2>
+        <p data-i18n="sec4_desc" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          قسّم ابن الجوزي كتابه إلى فصول تشمل مختلف طبقات المجتمع، ليثبت أن الحماقة عابرة للمناصب والألقاب. اضغط على أي طبقة لاستكشاف نماذجها وكيف وقعت في فخ الوسيلة الخاطئة:
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div id="strata-tabs" class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+        <!-- Populated dynamically via JS -->
+      </div>
+
+      <!-- Active Stratum Display Card -->
+      <div id="strata-display" class="rounded-3xl bg-white dark:bg-slate-900 border border-amber-200 dark:border-slate-800 p-6 sm:p-8 lg:p-10 shadow-xl transition-all duration-300">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. THE 3 SIGNS OF FOOLISHNESS & FRIEND WARNING [00:04:35 - 00:05:11]
+         ========================================== -->
+    <section id="signs-section" class="space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-xs font-extrabold uppercase tracking-wider" data-i18n="sec5_badge">
+          الرادار التشخيصي • [00:04:35 - 00:05:11]
+        </span>
+        <h2 data-i18n="sec5_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+          العلامات الثلاث للحماقة (كيف تكتشفها؟) 🔍🚨
+        </h2>
+        <p data-i18n="sec5_desc" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          من خلال مئات القصص التي جمعها ابن الجوزي، تتكرر ثلاث علامات رئيسية تشكل مثلث الحماقة في التفكير والتصرف:
+        </p>
+      </div>
+
+      <!-- 3 Signs Interactive Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Sign 1: Misunderstanding Speech -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-xl flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-500 flex items-center justify-center text-2xl">
+                🗣️❓
+              </span>
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400" data-i18n="sign1_tag">العلامة الأولى</span>
+            </div>
+            <h3 data-i18n="sign1_title" class="text-xl font-black text-slate-900 dark:text-white">
+              1. سوء فهم الكلام والمقاصد
+            </h3>
+            <p data-i18n="sign1_desc" class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              يسمع الأحمق الكلام فيأخذه على ظاهره الحرفي السطحي دون إدراك السياق أو المقصد الحقيقي للمتكلم، فيبني عليه استنتاجاً عجيباً!
+            </p>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-amber-50/80 dark:bg-slate-800/80 border border-amber-200/60 dark:border-slate-700 text-xs space-y-1">
+            <div class="font-bold text-amber-800 dark:text-amber-300" data-i18n="sign1_cure_title">💡 العلاج الحكيم:</div>
+            <div class="text-slate-600 dark:text-slate-300" data-i18n="sign1_cure_desc">افهم السياق والمقصد قبل أن تحكم على الكلمات المجردة.</div>
+          </div>
+        </div>
+
+        <!-- Sign 2: Hastiness -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-xl flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-orange-500/15 text-orange-500 flex items-center justify-center text-2xl">
+                ⚡🏃‍♂️
+              </span>
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400" data-i18n="sign2_tag">العلامة الثانية</span>
+            </div>
+            <h3 data-i18n="sign2_title" class="text-xl font-black text-slate-900 dark:text-white">
+              2. التسرع قبل الفهم
+            </h3>
+            <p data-i18n="sign2_desc" class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              القفز المباشر إلى القرار أو الفعل دون تروٍّ أو تثبّت من المعطيات. الأحمق يقرر وينفذ في ثوانٍ ما يحتاج إلى ساعات من التفكير!
+            </p>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-orange-50/80 dark:bg-slate-800/80 border border-orange-200/60 dark:border-slate-700 text-xs space-y-1">
+            <div class="font-bold text-orange-800 dark:text-orange-300" data-i18n="sign2_cure_title">💡 العلاج الحكيم:</div>
+            <div class="text-slate-600 dark:text-slate-300" data-i18n="sign2_cure_desc">التأني والتثبت؛ فالحكمة تبدأ بالتوقف والتفكير في العواقب.</div>
+          </div>
+        </div>
+
+        <!-- Sign 3: Overconfidence -->
+        <div class="interactive-card rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 shadow-xl flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="w-12 h-12 rounded-2xl bg-rose-500/15 text-rose-500 flex items-center justify-center text-2xl">
+                🦚👑
+              </span>
+              <span class="text-xs font-extrabold px-2.5 py-1 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400" data-i18n="sign3_tag">العلامة الثالثة (الأخطر)</span>
+            </div>
+            <h3 data-i18n="sign3_title" class="text-xl font-black text-slate-900 dark:text-white">
+              3. الثقة الزائدة بالنفس
+            </h3>
+            <p data-i18n="sign3_desc" class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              يرى الأحمق نفسه أذكى الناس وأنه لا يخطئ أبداً، فلا يستشير عاقلاً ولا يقبل نصيحة، بل يمضي في خطئه بكل فخر واعتزاز!
+            </p>
+          </div>
+          <div class="p-3.5 rounded-2xl bg-rose-50/80 dark:bg-slate-800/80 border border-rose-200/60 dark:border-slate-700 text-xs space-y-1">
+            <div class="font-bold text-rose-800 dark:text-rose-300" data-i18n="sign3_cure_title">💡 العلاج الحكيم:</div>
+            <div class="text-slate-600 dark:text-slate-300" data-i18n="sign3_cure_desc">التواضع المعرفي واستشارة أهل الخبرة واتهام الرأي الشخصي.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Warning Box: Befriending a Fool [00:05:00] -->
+      <div class="rounded-3xl bg-gradient-to-r from-rose-950 via-slate-900 to-indigo-950 text-white p-6 sm:p-8 border border-rose-500/40 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 text-xs font-bold">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span data-i18n="friend_warn_badge">تحذير ذهبي من ابن الجوزي • [00:05:00]</span>
+            </div>
+            <h3 data-i18n="friend_warn_title" class="text-xl sm:text-2xl font-black text-white">
+              إياك وصحبة الأحمق.. حتى لو كان طيب القلب! 🐻🪨
+            </h3>
+            <p data-i18n="friend_warn_desc" class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              يحذرنا ابن الجوزي تحذيراً شديداً من مصادقة الأحمق، ويقول القول المأثور: <strong class="text-amber-300">«إياك وصحبة الأحمق، فإنه يريد أن ينفعك فيضرك من حيث لا يشعر!»</strong> فالعدو العاقل يمكنك توقع خطوته والحذر منه، أما الصديق الأحمق فيأتيك بالكارثة وهو يبتسم ظناً منه أنه ينقذك!
+            </p>
+          </div>
+          <div class="lg:col-span-4 bg-white/5 border border-white/10 rounded-2xl p-5 text-center space-y-2">
+            <div class="text-3xl">🤝💥</div>
+            <div data-i18n="friend_quote_box" class="font-extrabold text-amber-300 text-sm sm:text-base">
+              «عدوٌّ عاقل خيرٌ من صديقٍ أحمق»
+            </div>
+            <p data-i18n="friend_quote_sub" class="text-xs text-slate-400">
+              لأن النية الطيبة بدون حكمة قد تؤدي إلى أسوأ العواقب
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. INTERACTIVE 2x2 MATRIX: THE 4 TYPES OF PEOPLE [00:05:22 - 00:05:55]
+         ========================================== -->
+    <section id="matrix-section" class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-xl space-y-8">
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 text-xs font-extrabold uppercase tracking-wider" data-i18n="sec6_badge">
+          مصفوفة المعرفة والوعي • [00:05:22 - 00:05:55]
+        </span>
+        <h2 data-i18n="sec6_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+          أصناف الناس الأربعة في ميزان العقل والوعي 🧭
+        </h2>
+        <p data-i18n="sec6_desc" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+          ينقل الكتاب التقسيم الشهير للناس بحسب <strong>«المعرفة»</strong> و<strong>«الوعي بالذات»</strong>. اضغط على أي مربع في المصفوفة التفاعلية لمعرفة صفات كل صنف وكيف تتعامل معه:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- 2x2 Interactive Grid -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <!-- Quadrant 1: Knows & Knows that he knows -->
+          <button onclick="selectMatrixQuadrant(0)" id="matrix-btn-0" class="matrix-quadrant text-start p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-500/10 dark:bg-emerald-950/30 transition hover:scale-[1.02] flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between w-full">
+              <span class="text-3xl">🌟🧙‍♂️</span>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500 text-slate-950 font-black text-xs" data-i18n="m1_badge">الصنف الأول</span>
+            </div>
+            <div>
+              <h3 data-i18n="m1_title" class="font-black text-lg text-slate-900 dark:text-white">يدري ويدري أنه يدري</h3>
+              <p data-i18n="m1_rule" class="text-emerald-600 dark:text-emerald-400 font-extrabold text-sm mt-1">«فهذا عالِمٌ فاتَّبِعوه»</p>
+            </div>
+          </button>
+
+          <!-- Quadrant 2: Knows & Doesn't know that he knows -->
+          <button onclick="selectMatrixQuadrant(1)" id="matrix-btn-1" class="matrix-quadrant text-start p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 transition hover:scale-[1.02] flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between w-full">
+              <span class="text-3xl">🔔😴</span>
+              <span class="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-600 dark:text-amber-300 font-black text-xs" data-i18n="m2_badge">الصنف الثاني</span>
+            </div>
+            <div>
+              <h3 data-i18n="m2_title" class="font-black text-lg text-slate-900 dark:text-white">يدري ولا يدري أنه يدري</h3>
+              <p data-i18n="m2_rule" class="text-amber-600 dark:text-amber-400 font-extrabold text-sm mt-1">«فهذا نائمٌ فأيقِظوه»</p>
+            </div>
+          </button>
+
+          <!-- Quadrant 3: Doesn't know & Knows that he doesn't know -->
+          <button onclick="selectMatrixQuadrant(2)" id="matrix-btn-2" class="matrix-quadrant text-start p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 transition hover:scale-[1.02] flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between w-full">
+              <span class="text-3xl">📚🌱</span>
+              <span class="px-2.5 py-1 rounded-full bg-sky-500/20 text-sky-600 dark:text-sky-300 font-black text-xs" data-i18n="m3_badge">الصنف الثالث</span>
+            </div>
+            <div>
+              <h3 data-i18n="m3_title" class="font-black text-lg text-slate-900 dark:text-white">لا يدري ويدري أنه لا يدري</h3>
+              <p data-i18n="m3_rule" class="text-sky-600 dark:text-sky-400 font-extrabold text-sm mt-1">«فهذا طالبُ علمٍ فعلِّموه»</p>
+            </div>
+          </button>
+
+          <!-- Quadrant 4: Doesn't know & Doesn't know that he doesn't know -->
+          <button onclick="selectMatrixQuadrant(3)" id="matrix-btn-3" class="matrix-quadrant text-start p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 transition hover:scale-[1.02] flex flex-col justify-between gap-4">
+            <div class="flex items-center justify-between w-full">
+              <span class="text-3xl">🤡🚫</span>
+              <span class="px-2.5 py-1 rounded-full bg-rose-500/20 text-rose-600 dark:text-rose-300 font-black text-xs" data-i18n="m4_badge">الصنف الرابع (الأخطر)</span>
+            </div>
+            <div>
+              <h3 data-i18n="m4_title" class="font-black text-lg text-slate-900 dark:text-white">لا يدري ولا يدري أنه لا يدري</h3>
+              <p data-i18n="m4_rule" class="text-rose-600 dark:text-rose-400 font-extrabold text-sm mt-1">«فهذا أحمقٌ فاجتَنِبوه!»</p>
+            </div>
+          </button>
+
+        </div>
+
+        <!-- Detailed Inspector Panel -->
+        <div id="matrix-inspector" class="lg:col-span-5 rounded-2xl bg-slate-900 text-white p-6 sm:p-7 border border-slate-700 flex flex-col justify-between space-y-6">
+          <!-- Populated dynamically by selectMatrixQuadrant() -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. INTERACTIVE WISDOM QUIZ [00:06:00 - 00:07:10]
+         ========================================== -->
+    <section id="quiz-section" class="rounded-3xl bg-gradient-to-br from-amber-500/10 via-white to-indigo-500/10 dark:from-slate-900 dark:via-slate-900 dark:to-indigo-950/50 border-2 border-amber-500/40 p-6 sm:p-10 shadow-2xl space-y-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-amber-500/20 pb-6">
+        <div class="space-y-2">
+          <span class="px-3 py-1 rounded-full bg-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider" data-i18n="quiz_badge">
+            اختبار تطبيقي تفاعلي • 5 مواقف
+          </span>
+          <h2 data-i18n="quiz_title" class="text-2xl sm:text-4xl font-black text-slate-900 dark:text-white">
+            اختبر نفسك: هل تستخدم عقلك بحكمة؟ 🧠⚖️
+          </h2>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="px-4 py-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-bold text-sm">
+            <span data-i18n="quiz_score_label">النتيجة:</span>
+            <span id="quiz-score-counter" class="text-amber-600 dark:text-amber-400 font-black ms-1">0 / 5</span>
+          </div>
+          <button onclick="resetQuiz()" class="px-3.5 py-2 rounded-2xl bg-slate-200 dark:bg-slate-800 hover:bg-amber-500 hover:text-slate-950 font-bold text-xs transition flex items-center gap-1.5">
+            <i class="fa-solid fa-rotate"></i>
+            <span data-i18n="quiz_reset_btn">إعادة الاختبار</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Container -->
+      <div id="quiz-body" class="space-y-6">
+        <!-- Populated dynamically via JS -->
+      </div>
+
+      <!-- Closing Prayer from Video [00:06:57] -->
+      <div class="p-6 rounded-2xl bg-amber-500/15 dark:bg-amber-500/10 border border-amber-500/40 text-center space-y-2">
+        <div class="text-2xl">🤲✨</div>
+        <p data-i18n="closing_prayer" class="text-lg sm:text-xl font-black text-slate-900 dark:text-amber-300">
+          «الحمد لله على نعمة العقل، ونسأل الله أن يرزقنا الحكمة ويجنبنا طريق الحمقى»
+        </p>
+        <p data-i18n="closing_prayer_sub" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+          خاتمة الفيديو [00:06:57] — لأن امتلاك العقل نعمة، وحسن استخدامه بالحكمة نعمة أعظم!
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. INTERACTIVE VIDEO CHAPTERS & TIMESTAMPS
+         ========================================== -->
+    <section id="chapters-section" class="rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-xl space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-xs font-extrabold text-red-500 uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-brands fa-youtube text-base"></i>
+            <span data-i18n="chapters_badge">دليل الفصول الزمنية للفيديو الأصلي</span>
+          </span>
+          <h2 data-i18n="chapters_title" class="text-xl sm:text-3xl font-black text-slate-900 dark:text-white mt-1">
+            خريطة الفيديو الزمنية (Abouawd Studio) 🎬
+          </h2>
+        </div>
+        <a href="https://youtu.be/s1qOKHPVbrE" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 self-start sm:self-auto transition">
+          <i class="fa-solid fa-play"></i>
+          <span data-i18n="chapters_open_yt">فتح الفيديو الكامل على يوتيوب</span>
+        </a>
+      </div>
+
+      <div id="chapters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       9. FOOTER WITH MANDATORY ATTRIBUTION
+       ========================================== -->
+  <footer class="border-t border-amber-200/80 dark:border-slate-800 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center space-y-5">
+      
+      <!-- Logo & Book Reference -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white shadow-md">
+          <span class="text-xl">🤡</span>
+        </div>
+        <div class="text-start">
+          <div data-i18n="footer_app_name" class="font-black text-slate-900 dark:text-white text-sm sm:text-base">
+            الدليل العملي الشامل لتصبح غبياً — تطبيق ويب تفاعلي
+          </div>
+          <div data-i18n="footer_book_ref" class="text-xs text-slate-500 dark:text-slate-400">
+            مستوحى من كتاب «أخبار الحمقى والمغفلين» للإمام ابن الجوزي وفيديو قناة Abouawd Studio
+          </div>
+        </div>
+      </div>
+
+      <!-- MANDATORY ATTRIBUTION BADGE -->
+      <div class="w-full max-w-2xl p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/15 via-orange-500/15 to-indigo-500/15 border-2 border-amber-500/40 shadow-lg">
+        <p class="text-base sm:text-lg font-black text-slate-900 dark:text-amber-300 tracking-wide">
+          تصميم محمد عوض خير بمساعدة Gemini 4 Argon
+        </p>
+        <p id="footer-en-credit" class="text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 mt-1">
+          Designed by Mohamed Awad Khair with the help of Gemini 4 Argon
+        </p>
+      </div>
+
+      <!-- Quick Links & Copyright -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400 font-semibold">
+        <a href="https://youtu.be/s1qOKHPVbrE" target="_blank" rel="noopener noreferrer" class="hover:text-amber-500 transition flex items-center gap-1">
+          <i class="fa-brands fa-youtube text-red-500"></i>
+          <span>YouTube: Abouawd Studio</span>
+        </a>
+        <span>•</span>
+        <button onclick="toggleLanguage()" class="hover:text-amber-500 transition">العربية / English</button>
+        <span>•</span>
+        <button onclick="toggleTheme()" class="hover:text-amber-500 transition" data-i18n="footer_toggle_theme">تبديل المظهر (ليلي / نهاري)</button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       APPLICATION LOGIC & BILINGUAL DATA STORE
+       ========================================== -->
+  <script>
+    // Current State
+    let currentLang = 'ar';
+    let currentStratumIndex = 0;
+    let currentMatrixIndex = 0;
+    let currentQuizQuestion = 0;
+    let quizScore = 0;
+    let quizAnswered = [];
+
+    // Bilingual Dictionary for Static UI Elements
+    const i18n = {
+      ar: {
+        nav_badge: "ابن الجوزي • 800 عام",
+        nav_title: "الدليل العملي لتصبح غبياً",
+        nav_sim: "قصة الأمير والطائر",
+        nav_reasons: "لماذا أُلِّف الكتاب؟",
+        nav_anatomy: "الأحمق والمجنون",
+        nav_strata: "طبقات الحمقى",
+        nav_signs: "العلامات الثلاث",
+        nav_matrix: "أصناف الناس",
+        nav_quiz: "اختبر حكمتك",
+        watch_video_short: "الفيديو الأصلي",
+
+        hero_channel_tag: "مبني على فيديو قناة Abouawd Studio • كتاب أخبار الحمقى والمغفلين",
+        hero_title: "الدليل العملي الشامل لتصبح غبياً 🤡",
+        hero_subtitle: "قبل أكثر من 800 عام، قرر الإمام العالم أبو الفرج ابن الجوزي (عالم الفقه والحديث والتفسير والتاريخ) تأليف كتاب فريد من نوعه: «أخبار الحمقى والمغفلين». لم يكن الهدف مجرد السخرية، بل تقديم مرآة فلسفية عميقة تكشف كيف يمكن لصاحب العقل والمنصب أن يتصرف بحماقة تامة!",
+        hero_definition_quote: "«الحماقة ليست فقدان العقل، بل هي إرادة الوصول إلى هدف صحيح.. لكن باستخدام وسيلة خاطئة تماماً!»",
+        hero_definition_author: "— تعريف الإمام ابن الجوزي للحماقة [00:02:04]",
+        btn_start_journey: "ابدأ الرحلة التفاعلية",
+        btn_watch_yt: "مشاهدة الفيديو على يوتيوب",
+        btn_chapters: "فصول الفيديو",
+
+        sim_badge: "محاكاة القصة الافتتاحية [00:00]",
+        sim_reset: "إعادة",
+        sim_title: "موقف الأمير والطائر الصغير 🐦🏰",
+        sim_desc: "دخل طائر جميل إلى البستان وأراد الأمير ألا يطير الطائر ويهرب. لو كنت مكان هذا الأمير، ما هي الوسيلة التي ستختارها؟",
+        sim_choice1_tag: "قرار الأمير الأحمق",
+        sim_choice1_title: "أغلقوا أبواب المدينة فوراً!",
+        sim_choice2_tag: "قرار العاقل الحكيم",
+        sim_choice2_title: "استخدم قفصاً وحبوباً لصيده",
+        sim_meter_goal: "صحة الهدف (منع الطائر من الهرب):",
+        sim_meter_method: "حكمة الوسيلة المختارة:",
+        sim_waiting: "بانتظار قرارك...",
+        sim_default_feedback: "اختر أحد القرارين بالأعلى لترى كيف يحلل ابن الجوزي الفرق بين الهدف والوسيلة!",
+
+        sec2_badge: "فلسفة الكتاب • [00:00:45 - 00:01:54]",
+        sec2_title: "لماذا يكتب إمام عظيم كتاباً عن الحمقى؟ 🤔📜",
+        sec2_desc: "قد يتساءل القارئ: كيف لعالم جليل في الفقه والحديث والتفسير والتاريخ مثل الإمام أبي الفرج ابن الجوزي أن يخصص كتاباً كاملاً لأخبار الحمقى والمغفلين؟ في مقدمة الكتاب، يحدد ابن الجوزي ثلاثة أهداف رئيسية بالغة الحكمة:",
+        r1_title: "معرفة قيمة نعمة العقل 🧠✨",
+        r1_desc: "أن يعرف الإنسان العاقل قدر نعمة الله عليه بالعقل؛ فالأشياء تُعرف بأضدادها، وحين يرى العاقل أفعال الحمقى يحمد الله على سلامة فكره وتدبيره.",
+        r1_footer: "«وبضدها تتميز الأشياء»",
+        r2_title: "تحذير الذكي من الغفلة ⚠️🛡️",
+        r2_desc: "تحذير الإنسان الذكي من الوقوع في أسباب الغفلة والحماقة؛ فالذكاء وحده لا يعصم صاحبه إذا تسرّع أو اغترّ بنفسه، لذا كانت قصصهم عبرة ووقاية.",
+        r2_footer: "«السعيد من اتعظ بغيره»",
+        r3_title: "الترويح عن النفس من الجد 😊🌿",
+        r3_desc: "الترويح عن القلوب؛ لأن النفس البشرية تملّ وتكلّ من الجد المتواصل، وتحتاج إلى شيء من الطرائف المباحة لتستعيد نشاطها وحيويتها.",
+        r3_footer: "«روّحوا القلوب ساعة بعد ساعة»",
+
+        sec3_badge: "التحليل الدقيق • [00:02:04 - 00:03:30]",
+        sec3_title: "معادلة الحماقة: لماذا الأحمق أخطر من المجنون؟ ⚡",
+        sec3_subtitle: "يصحح ابن الجوزي مفهوماً شائعاً: الغباء أو الحماقة ليست دائماً ضعفاً في الذاكرة أو بطئاً في الفهم، بل خلل في اختيار الوسيلة!",
+        eq_heading: "المعادلة الذهبية لتعريف الحماقة عند ابن الجوزي",
+        eq_part1_title: "هدف صحيح ومشروع",
+        eq_part1_desc: "النية سليمة والغاية مطلوبة",
+        eq_part2_title: "وسيلة خاطئة تماماً",
+        eq_part2_desc: "طريقة تناقض الواقع والمنطق",
+        eq_part3_title: "الحماقة الكارثية",
+        eq_part3_desc: "إفساد من حيث أراد الإصلاح!",
+
+        madman_title: "المجنون (فاقد العقل)",
+        madman_sub: "خطره محدود ومعروف للناس",
+        madman_risk: "خطر مجتمعي: منخفض",
+        madman_p1: "فقد عقله بالكامل، وحاله واضح للجميع فلا ينخدع به أحد.",
+        madman_p2: "مرفوع عنه القلم، ولا يُكلَّف بمسؤوليات أو مناصب قيادية.",
+        madman_p3: "لا يعينه أحد قاضياً أو أميراً أو مفتياً، لذا يظل أثره محصوراً.",
+
+        fool_title: "الأحمق (يمتلك عقلاً ولا يحسن استخدامه)",
+        fool_sub: "الخطر الحقيقي على المجتمع!",
+        fool_risk: "خطر مجتمعي: كارثي 🔥",
+        fool_p1: "يمتلك عقلاً ويتحدث بطلاقة وقد يحفظ الكتب، فيظنه الناس عاقلاً حكيماً!",
+        fool_p2: "قد يتولى منصب قاضٍ أو حاكم أو عالم أو مسؤول، فيصبح قراره الأحمق أزمة عامة.",
+        fool_p3: "يتحرك بثقة مفرطة ويصرّ على وسيلته الخاطئة، فيُفسد البلاد والعباد بنوايا حسنة!",
+
+        sec4_badge: "المفاجأة الكبرى في الكتاب • [00:03:43 - 00:04:35]",
+        sec4_title: "المنصب والعلم الظاهري لا يمنعان الحماقة! 👑⚖️📚",
+        sec4_desc: "قسّم ابن الجوزي كتابه إلى فصول تشمل مختلف طبقات المجتمع، ليثبت أن الحماقة عابرة للمناصب والألقاب. اضغط على أي طبقة لاستكشاف نماذجها وكيف وقعت في فخ الوسيلة الخاطئة:",
+
+        sec5_badge: "الرادار التشخيصي • [00:04:35 - 00:05:11]",
+        sec5_title: "العلامات الثلاث للحماقة (كيف تكتشفها؟) 🔍🚨",
+        sec5_desc: "من خلال مئات القصص التي جمعها ابن الجوزي، تتكرر ثلاث علامات رئيسية تشكل مثلث الحماقة في التفكير والتصرف:",
+        sign1_tag: "العلامة الأولى",
+        sign1_title: "1. سوء فهم الكلام والمقاصد",
+        sign1_desc: "يسمع الأحمق الكلام فيأخذه على ظاهره الحرفي السطحي دون إدراك السياق أو المقصد الحقيقي للمتكلم، فيبني عليه استنتاجاً عجيباً!",
+        sign1_cure_title: "💡 العلاج الحكيم:",
+        sign1_cure_desc: "افهم السياق والمقصد قبل أن تحكم على الكلمات المجردة.",
+        sign2_tag: "العلامة الثانية",
+        sign2_title: "2. التسرع قبل الفهم",
+        sign2_desc: "القفز المباشر إلى القرار أو الفعل دون تروٍّ أو تثبّت من المعطيات. الأحمق يقرر وينفذ في ثوانٍ ما يحتاج إلى ساعات من التفكير!",
+        sign2_cure_title: "💡 العلاج الحكيم:",
+        sign2_cure_desc: "التأني والتثبت؛ فالحكمة تبدأ بالتوقف والتفكير في العواقب.",
+        sign3_tag: "العلامة الثالثة (الأخطر)",
+        sign3_title: "3. الثقة الزائدة بالنفس",
+        sign3_desc: "يرى الأحمق نفسه أذكى الناس وأنه لا يخطئ أبداً، فلا يستشير عاقلاً ولا يقبل نصيحة، بل يمضي في خطئه بكل فخر واعتزاز!",
+        sign3_cure_title: "💡 العلاج الحكيم:",
+        sign3_cure_desc: "التواضع المعرفي واستشارة أهل الخبرة واتهام الرأي الشخصي.",
+
+        friend_warn_badge: "تحذير ذهبي من ابن الجوزي • [00:05:00]",
+        friend_warn_title: "إياك وصحبة الأحمق.. حتى لو كان طيب القلب! 🐻🪨",
+        friend_warn_desc: "يحذرنا ابن الجوزي تحذيراً شديداً من مصادقة الأحمق، ويقول القول المأثور: «إياك وصحبة الأحمق، فإنه يريد أن ينفعك فيضرك من حيث لا يشعر!» فالعدو العاقل يمكنك توقع خطوته والحذر منه، أما الصديق الأحمق فيأتيك بالكارثة وهو يبتسم ظناً منه أنه ينقذك!",
+        friend_quote_box: "«عدوٌّ عاقل خيرٌ من صديقٍ أحمق»",
+        friend_quote_sub: "لأن النية الطيبة بدون حكمة قد تؤدي إلى أسوأ العواقب",
+
+        sec6_badge: "مصفوفة المعرفة والوعي • [00:05:22 - 00:05:55]",
+        sec6_title: "أصناف الناس الأربعة في ميزان العقل والوعي 🧭",
+        sec6_desc: "ينقل الكتاب التقسيم الشهير للناس بحسب «المعرفة» و«الوعي بالذات». اضغط على أي مربع في المصفوفة التفاعلية لمعرفة صفات كل صنف وكيف تتعامل معه:",
+        m1_badge: "الصنف الأول",
+        m1_title: "يدري ويدري أنه يدري",
+        m1_rule: "«فهذا عالِمٌ فاتَّبِعوه»",
+        m2_badge: "الصنف الثاني",
+        m2_title: "يدري ولا يدري أنه يدري",
+        m2_rule: "«فهذا نائمٌ فأيقِظوه»",
+        m3_badge: "الصنف الثالث",
+        m3_title: "لا يدري ويدري أنه لا يدري",
+        m3_rule: "«فهذا طالبُ علمٍ فعلِّموه»",
+        m4_badge: "الصنف الرابع (الأخطر)",
+        m4_title: "لا يدري ولا يدري أنه لا يدري",
+        m4_rule: "«فهذا أحمقٌ فاجتَنِبوه!»",
+
+        quiz_badge: "اختبار تطبيقي تفاعلي • 5 مواقف",
+        quiz_title: "اختبر نفسك: هل تستخدم عقلك بحكمة؟ 🧠⚖️",
+        quiz_score_label: "النتيجة:",
+        quiz_reset_btn: "إعادة الاختبار",
+        closing_prayer: "«الحمد لله على نعمة العقل، ونسأل الله أن يرزقنا الحكمة ويجنبنا طريق الحمقى»",
+        closing_prayer_sub: "خاتمة الفيديو [00:06:57] — لأن امتلاك العقل نعمة، وحسن استخدامه بالحكمة نعمة أعظم!",
+
+        chapters_badge: "دليل الفصول الزمنية للفيديو الأصلي",
+        chapters_title: "خريطة الفيديو الزمنية (Abouawd Studio) 🎬",
+        chapters_open_yt: "فتح الفيديو الكامل على يوتيوب",
+
+        footer_app_name: "الدليل العملي الشامل لتصبح غبياً — تطبيق ويب تفاعلي",
+        footer_book_ref: "مستوحى من كتاب «أخبار الحمقى والمغفلين» للإمام ابن الجوزي وفيديو قناة Abouawd Studio",
+        footer_toggle_theme: "تبديل المظهر (ليلي / نهاري)"
+      },
+
+      en: {
+        nav_badge: "Ibn al-Jawzi • 800 Years Ago",
+        nav_title: "Practical Guide to Becoming Foolish",
+        nav_sim: "Prince & The Bird",
+        nav_reasons: "Why the Book?",
+        nav_anatomy: "Fool vs. Madman",
+        nav_strata: "Social Strata",
+        nav_signs: "The 3 Signs",
+        nav_matrix: "4 Types of People",
+        nav_quiz: "Wisdom Quiz",
+        watch_video_short: "Original Video",
+
+        hero_channel_tag: "Based on Abouawd Studio's Video • Akhbar al-Hamqa wa al-Mughaffalin",
+        hero_title: "The Comprehensive Practical Guide to Becoming Foolish 🤡",
+        hero_subtitle: "Over 800 years ago, the renowned scholar Imam Abu al-Faraj Ibn al-Jawzi (master of Fiqh, Hadith, Tafsir, and History) wrote a unique masterpiece: 'Stories of Fools and Simpletons'. His goal wasn't mere mockery, but a deep philosophical mirror showing how even people of intellect and high office can act with utter foolishness!",
+        hero_definition_quote: "“Foolishness is not the loss of intellect; rather, it is seeking a valid, correct goal... using a completely wrong means!”",
+        hero_definition_author: "— Imam Ibn al-Jawzi's Definition of Foolishness [00:02:04]",
+        btn_start_journey: "Start Interactive Journey",
+        btn_watch_yt: "Watch Video on YouTube",
+        btn_chapters: "Video Chapters",
+
+        sim_badge: "Opening Story Simulation [00:00]",
+        sim_reset: "Reset",
+        sim_title: "The Prince & The Little Bird 🐦🏰",
+        sim_desc: "A small bird landed in the garden, and the Prince wanted to prevent it from flying away. If you were in the Prince's shoes, which method would you choose?",
+        sim_choice1_tag: "Foolish Prince's Decree",
+        sim_choice1_title: "Close all city gates immediately!",
+        sim_choice2_tag: "Wise Person's Choice",
+        sim_choice2_title: "Use a birdcage and scatter seeds",
+        sim_meter_goal: "Goal Validity (Keep the bird):",
+        sim_meter_method: "Wisdom of Chosen Means:",
+        sim_waiting: "Awaiting your decree...",
+        sim_default_feedback: "Choose one of the two options above to see how Ibn al-Jawzi analyzes the gap between Goal and Means!",
+
+        sec2_badge: "Philosophy of the Book • [00:00:45 - 00:01:54]",
+        sec2_title: "Why Would a Great Scholar Write a Book About Fools? 🤔📜",
+        sec2_desc: "One might wonder: Why did a towering scholar of Jurisprudence, Hadith, and History like Imam Ibn al-Jawzi dedicate an entire book to fools and simpletons? In his introduction, he outlines three profound reasons:",
+        r1_title: "Appreciating the Blessing of Intellect 🧠✨",
+        r1_desc: "When a wise person observes the bizarre actions of fools, they truly appreciate God's blessing of sound reason—for things are best known by their opposites.",
+        r1_footer: "“By their opposites, things are distinguished”",
+        r2_title: "Warning the Intelligent Against Heedlessness ⚠️🛡️",
+        r2_desc: "Raw intelligence alone does not make someone immune to foolishness if they fall into hastiness or arrogance. These stories serve as a safeguard and warning.",
+        r2_footer: "“The fortunate one learns from others' mistakes”",
+        r3_title: "Refreshing the Soul from Continuous Rigor 😊🌿",
+        r3_desc: "Human souls grow weary from non-stop seriousness and heavy study. Permissible humor and witty anecdotes refresh the mind and restore energy.",
+        r3_footer: "“Refresh your hearts hour after hour”",
+
+        sec3_badge: "Deep Anatomy • [00:02:04 - 00:03:30]",
+        sec3_title: "The Equation of Foolishness: Why a Fool is Worse than a Madman ⚡",
+        sec3_subtitle: "Ibn al-Jawzi corrects a common misconception: Foolishness isn't necessarily poor memory or low IQ—it is a fatal flaw in choosing the means!",
+        eq_heading: "Ibn al-Jawzi's Golden Equation of Foolishness",
+        eq_part1_title: "Valid, Correct Goal",
+        eq_part1_desc: "Sound intention & legitimate objective",
+        eq_part2_title: "Completely Wrong Means",
+        eq_part2_desc: "Method contradicts logic & reality",
+        eq_part3_title: "Catastrophic Foolishness",
+        eq_part3_desc: "Causing ruin while intending good!",
+
+        madman_title: "The Madman (المجنون)",
+        madman_sub: "Limited & obvious impact",
+        madman_risk: "Public Risk: Low",
+        madman_p1: "Has lost his mind completely; his condition is obvious so nobody is deceived.",
+        madman_p2: "Excused from responsibility and never placed in leadership positions.",
+        madman_p3: "Nobody appoints a madman as a judge, ruler, or scholar, keeping his impact contained.",
+
+        fool_title: "The Fool (الأحمق - Misuses His Mind)",
+        fool_sub: "The Real Danger to Society!",
+        fool_risk: "Public Risk: Catastrophic 🔥",
+        fool_p1: "Possesses a mind, speaks fluently, and may memorize books—so people mistake him for a wise person!",
+        fool_p2: "Can become a Judge, Ruler, Scholar, or Official—turning personal foolishness into a public crisis.",
+        fool_p3: "Acts with extreme overconfidence and insists on wrong methods, ruining lives with good intentions!",
+
+        sec4_badge: "The Book's Biggest Surprise • [00:03:43 - 00:04:35]",
+        sec4_title: "Status & Outward Knowledge Do Not Prevent Foolishness! 👑⚖️📚",
+        sec4_desc: "Ibn al-Jawzi divided his book across social classes to prove that foolishness transcends titles and prestige. Click any class below to explore how they fell into the trap of wrong means:",
+
+        sec5_badge: "Diagnostic Radar • [00:04:35 - 00:05:11]",
+        sec5_title: "The 3 Signs of Foolishness (How to Spot It) 🔍🚨",
+        sec5_desc: "Across hundreds of historical anecdotes compiled by Ibn al-Jawzi, three core traits repeatedly form the triangle of foolish behavior:",
+        sign1_tag: "First Sign",
+        sign1_title: "1. Misunderstanding Speech & Context",
+        sign1_desc: "Taking words purely at face value without grasping the context, metaphor, or true intention of the speaker, leading to absurd conclusions.",
+        sign1_cure_title: "💡 The Wise Cure:",
+        sign1_cure_desc: "Seek the deeper intent and context before reacting to literal words.",
+        sign2_tag: "Second Sign",
+        sign2_title: "2. Hastiness & Impulsiveness",
+        sign2_desc: "Jumping straight into decisions and actions before understanding the situation. A fool executes in seconds what requires hours of reflection.",
+        sign2_cure_title: "💡 The Wise Cure:",
+        sign2_cure_desc: "Practice deliberation and verification; wisdom begins with pausing to weigh consequences.",
+        sign3_tag: "Third Sign (Most Dangerous)",
+        sign3_title: "3. Excessive Overconfidence",
+        sign3_desc: "Believing oneself to be the smartest person alive who never errs—refusing consultation or advice while proudly marching into blunders!",
+        sign3_cure_title: "💡 The Wise Cure:",
+        sign3_cure_desc: "Intellectual humility, consulting experts, and questioning one's own assumptions.",
+
+        friend_warn_badge: "Golden Warning from Ibn al-Jawzi • [00:05:00]",
+        friend_warn_title: "Beware of Befriending a Fool—Even With a Good Heart! 🐻🪨",
+        friend_warn_desc: "Ibn al-Jawzi strongly warns against taking a fool as a companion: “Beware of befriending a fool, for he wants to benefit you, so he harms you unintentionally!” You can predict a rational enemy, but a foolish friend brings disaster with a smile while trying to help you!",
+        friend_quote_box: "“A wise enemy is better than a foolish friend”",
+        friend_quote_sub: "Because good intentions without wisdom often lead to the worst disasters",
+
+        sec6_badge: "Knowledge & Self-Awareness Matrix • [00:05:22 - 00:05:55]",
+        sec6_title: "The 4 Types of People in Intellect & Awareness 🧭",
+        sec6_desc: "The book cites the famous classification of people based on 'Knowledge' and 'Self-Awareness'. Click any quadrant in the matrix to inspect their traits and how to deal with them:",
+        m1_badge: "Type 1",
+        m1_title: "Knows & Knows that he knows",
+        m1_rule: "“He is a Scholar — Follow him!”",
+        m2_badge: "Type 2",
+        m2_title: "Knows & Doesn't know that he knows",
+        m2_rule: "“He is Asleep — Wake him up!”",
+        m3_badge: "Type 3",
+        m3_title: "Doesn't know & Knows that he doesn't know",
+        m3_rule: "“He is a Student — Teach him!”",
+        m4_badge: "Type 4 (Danger Zone)",
+        m4_title: "Doesn't know & Doesn't know that he doesn't know",
+        m4_rule: "“He is a Fool — Avoid him!”",
+
+        quiz_badge: "Interactive Situational Quiz • 5 Scenarios",
+        quiz_title: "Test Yourself: Do You Use Your Mind Wisely? 🧠⚖️",
+        quiz_score_label: "Score:",
+        quiz_reset_btn: "Restart Quiz",
+        closing_prayer: "“Praise be to God for the blessing of intellect, and we ask God to grant us wisdom and keep us away from the path of fools.”",
+        closing_prayer_sub: "Video Closing Prayer [00:06:57] — Having a mind is a blessing; using it wisely is an even greater blessing!",
+
+        chapters_badge: "Original Video Timestamp Guide",
+        chapters_title: "Interactive Video Timeline (Abouawd Studio) 🎬",
+        chapters_open_yt: "Open Full Video on YouTube",
+
+        footer_app_name: "Practical Guide to Becoming Foolish — Interactive Web App",
+        footer_book_ref: "Inspired by Imam Ibn al-Jawzi's 'Akhbar al-Hamqa wa al-Mughaffalin' & Abouawd Studio",
+        footer_toggle_theme: "Toggle Theme (Dark / Light)"
+      }
+    };
+
+    // Social Strata Data (6 Classes mentioned in Video [00:03:43 - 00:04:35])
+    const strataData = [
+      {
+        id: 'princes',
+        icon: '👑🏰',
+        title: { ar: 'الأمراء والحكام', en: 'Princes & Rulers' },
+        tag: { ar: 'سلطة بلا حكمة', en: 'Power Without Wisdom' },
+        summary: {
+          ar: 'حين تجتمع السلطة المطلقة مع التسرع وغياب المشورة، يتحول القرار الشخصي البسيط إلى شلل كامل للمدينة أو الدولة.',
+          en: 'When absolute authority meets hastiness and lack of consultation, a minor whim turns into total paralysis for an entire city.'
+        },
+        story: {
+          ar: 'من أشهر أمثلتهم في الفيديو والكتاب: الأمير الذي رأى طائراً صغيراً في بستانه وخشي أن يطير ويهرب، فأمر الحراس بإغلاق جميع أبواب المدينة الضخمة فوراً كي لا يخرج الطائر.. وكأن الطائر يمشي على قدميه ويستأذن البوابين عند الخروج!',
+          en: 'As highlighted in the video’s opening: A prince saw a small bird and didn’t want it to escape, so he ordered the guards to lock all the massive city gates—as if a bird walks on foot through city doors rather than flying over walls!'
+        },
+        goal: { ar: 'الاحتفاظ بالطائر الجميل داخل البستان (هدف مفهوم).', en: 'Keeping the bird inside the garden (Understandable goal).' },
+        means: { ar: 'إغلاق أبواب المدينة الخشبية وتعطيل مصالح آلاف البشر بينما السماء مفتوحة!', en: 'Locking city gates and halting thousands of citizens while the sky remains wide open!' },
+        lesson: { ar: 'المنصب الرفيع لا يمنح صاحبه الحكمة تلقائياً؛ بل يضاعف أثر حماقته على الناس.', en: 'High office does not automatically grant wisdom; it only magnifies the impact of foolish decisions.' }
+      },
+      {
+        id: 'judges',
+        icon: '⚖️📜',
+        title: { ar: 'القضاة', en: 'Judges' },
+        tag: { ar: 'أحكام متسرعة', en: 'Absurd Rulings' },
+        summary: {
+          ar: 'القاضي يُفترض فيه الفطنة والتثبت، لكن ابن الجوزي يورد أخبار قضاة أصدروا أحكاماً مضحكة بسبب التسرع وعدم فهم القضية.',
+          en: 'A judge is expected to possess sharp discernment, yet Ibn al-Jawzi documents judges who issued comical verdicts due to hastiness.'
+        },
+        story: {
+          ar: 'يذكر ابن الجوزي قصص قضاة كانوا يستمعون إلى طرف واحد أو يخلطون بين المدعي والمدعى عليه بسبب العجلة والثقة الزائدة، فيحكمون على البريء أو يطلبون شهوداً في أمور بديهية لا يقبلها العقل!',
+          en: 'Ibn al-Jawzi recounts judges who rushed to judgment before hearing the full case or confused the plaintiff with the defendant out of overconfidence, issuing rulings that baffled everyone in court.'
+        },
+        goal: { ar: 'الفصل بين المتخاصمين وتحقيق العدالة السريعة.', en: 'Resolving disputes and achieving swift justice.' },
+        means: { ar: 'إصدار الحكم قبل فهم ملابسات القضية وسماع البينات.', en: 'Issuing a verdict before grasping the facts or listening carefully.' },
+        lesson: { ar: 'العدل يحتاج إلى فهم عميق للواقع بقدر حاجته إلى معرفة النصوص.', en: 'Justice requires deep comprehension of reality just as much as knowing legal texts.' }
+      },
+      {
+        id: 'scholars',
+        icon: '📚🎓',
+        title: { ar: 'العلماء (أصحاب العلم الظاهري)', en: 'Outward Scholars' },
+        tag: { ar: 'حفظ بلا فقه', en: 'Memorization Without Wisdom' },
+        summary: {
+          ar: 'من أخطر ما كشفه الكتاب أن الإنسان قد يحفظ المتون والكتب ويمتلك علماً ظاهرياً، لكنه يفتقد الحكمة وحسن التصرف في المواقف العملية.',
+          en: 'One of the book’s deepest insights is that someone may memorize books and possess outward knowledge, yet lack common sense and practical wisdom.'
+        },
+        story: {
+          ar: 'يروي ابن الجوزي أخبار أناس اشتغلوا بنسخ الكتب أو حفظها حرفياً دون فهم، فكان أحدهم يقرأ الكلمة مصحّفة أو يطبق نصاً في غير موضعه تماماً، ويرفض تصحيح العلماء له لفرط ثقته بنفسه!',
+          en: 'Ibn al-Jawzi tells of copyists and literalists who memorized or read texts with comical mispronunciations or applied rules in completely wrong contexts, stubbornly refusing correction.'
+        },
+        goal: { ar: 'نشر العلم وتعليم الناس.', en: 'Spreading knowledge and teaching people.' },
+        means: { ar: 'الجمود الحرفي وسوء الفهم مع الكِبر عن قبول التصحيح.', en: 'Literal rigidity and misunderstanding combined with arrogance against correction.' },
+        lesson: { ar: 'العلم الحقيقي ليس كثرة المحفوظات، بل الفهم السليم ووضع الأمور في نصابها.', en: 'True knowledge is not mere memorization, but sound comprehension and putting things in their proper place.' }
+      },
+      {
+        id: 'merchants',
+        icon: '💰🐪',
+        title: { ar: 'التجار', en: 'Merchants' },
+        tag: { ar: 'حسابات خاسرة', en: 'Foolish Calculations' },
+        summary: {
+          ar: 'التجارة تقوم على التدبير وحساب العواقب، لكن التاجر الأحمق يجمع بين الطمع والغفلة فيخسر رأس ماله بطريقة عجيبة.',
+          en: 'Commerce relies on foresight and calculation, yet the foolish merchant combines greed with naivety, losing his capital in bizarre ways.'
+        },
+        story: {
+          ar: 'من طرائفهم أن بعضهم كان يشتري البضاعة بأغلى من ثمنها ويبيعها بالأرخص ظناً منه أن «كثرة البيع والشراء» وحدها تجلب الربح، أو يخبئ ماله في مكان يضع عليه علامة ترشد اللصوص إليه مباشرة!',
+          en: 'Some foolish merchants bought goods high and sold low thinking "high volume alone brings profit," or buried their gold in the desert and placed a sign above it saying "There is no gold here!"'
+        },
+        goal: { ar: 'تحقيق الربح وحفظ المال من الضياع.', en: 'Making profit and protecting wealth from theft.' },
+        means: { ar: 'قرارات مالية متهورة أو وسائل حفظ تكشف السر للجميع!', en: 'Impulsive financial calculation or hiding methods that expose the treasure!' },
+        lesson: { ar: 'النجاح العملي يتطلب دراسة الأسباب الواقعية لا الأماني الساذجة.', en: 'Practical success requires studying realistic causes rather than naive wishful thinking.' }
+      },
+      {
+        id: 'poets',
+        icon: '🪶🎭',
+        title: { ar: 'الشعراء', en: 'Poets' },
+        tag: { ar: 'انعدام الذوق والسياق', en: 'Context Blindness' },
+        summary: {
+          ar: 'الشاعر يحتاج إلى ذكاء اجتماعي لمعرفة ما يناسب المقام، لكن الشاعر الأحمق يلقي قصيدة تدمر الموقف بالكامل!',
+          en: 'A poet needs social intelligence to match the occasion, whereas a foolish poet recites verses that completely ruin the moment!'
+        },
+        story: {
+          ar: 'يدخل الشاعر الأحمق ليمدح أميراً أو يهنئه بمولود أو قصر جديد، فيلقي أبياتاً ظاهرها المدح وباطنها التشاؤم بذكر القبور والخراب والفراق، ثم يتعجب لماذا غضب الأمير ولم يعطه الجائزة!',
+          en: 'A foolish poet enters to congratulate a prince on a new palace or celebration, yet begins his poem by mentioning graves, ruin, and death—then wonders why he wasn’t rewarded!'
+        },
+        goal: { ar: 'مدح الأمير وإدخال السرور عليه لنيل الجائزة.', en: 'Praising the ruler and bringing joy to earn a reward.' },
+        means: { ar: 'اختيار ألفاظ ومعانٍ تثير التشاؤم والحزن في يوم الفرح.', en: 'Choosing words of gloom and ruin during a joyful celebration.' },
+        lesson: { ar: 'لكل مقام مقال؛ والكلمة الصحيحة في الوقت الخاطئ ضرب من الحماقة.', en: 'Every occasion has its proper speech; the wrong words at the wrong time are a mark of foolishness.' }
+      },
+      {
+        id: 'ascetics',
+        icon: '📿🕯️',
+        title: { ar: 'الزهاد والعبّاد المغفلون', en: 'Naive Ascetics' },
+        tag: { ar: 'إخلاص بلا بصيرة', en: 'Devotion Without Insight' },
+        summary: {
+          ar: 'خصّص ابن الجوزي باباً للمغفلين من المتزهدين ليبيّن أن صلاح النية لا يغني أبداً عن العلم والفهم السليم.',
+          en: 'Ibn al-Jawzi dedicated a chapter to naive ascetics to show that good intentions never substitute for knowledge and sound intellect.'
+        },
+        story: {
+          ar: 'كان بعضهم يقع في تصرفات ساذجة للغاية بسبب الجهل وسوء الفهم الحرفي، فينخدعون بالحيل البسيطة أو يدعون بأدعية متناقضة لأنهم فصلوا العبادة عن التفكير والعلم.',
+          en: 'Some fell into extreme naivety due to ignorance and literalism—getting easily tricked or making contradictory supplications because they separated devotion from knowledge.'
+        },
+        goal: { ar: 'الزهد والتقرب إلى الله وفعل الخير.', en: 'Piety, devotion, and doing good deeds.' },
+        means: { ar: 'تصرفات مبنية على الجهل والغفلة وترك التعلم.', en: 'Actions built upon ignorance, gullibility, and abandoning learning.' },
+        lesson: { ar: 'العبادة والزهد لا يستقيمان إلا على أساس متين من العلم والعقل البصير.', en: 'True devotion must be built upon a solid foundation of knowledge and insightful reason.' }
+      }
+    ];
+
+    // 4 Types of People Matrix Data [00:05:22 - 00:05:55]
+    const matrixData = [
+      {
+        title: { ar: '1. يدري ويدري أنه يدري 🌟', en: '1. Knows & Knows That He Knows 🌟' },
+        verdict: { ar: '«فهذا عالِمٌ فاتَّبِعوه»', en: '“He is a Scholar — Follow him!”' },
+        color: 'emerald',
+        knowledge: { ar: 'يمتلك العلم الصحيح ✅', en: 'Possesses Sound Knowledge ✅' },
+        awareness: { ar: 'واعٍ بعلمه وقدراته ✅', en: 'Self-Aware & Confident ✅' },
+        analysis: {
+          ar: 'هذا هو الإنسان الحكيم العالم؛ يجمع بين البصيرة الصحيحة والوعي الذاتي المتوازن. يعرف الهدف الصحيح ويختار له الوسيلة الصحيحة في الوقت المناسب.',
+          en: 'This is the wise scholar who combines sound knowledge with balanced self-awareness. He identifies valid goals and selects the right, wise means to achieve them.'
+        },
+        action: {
+          ar: 'استفد من علمه، استشره في النوازل، واتبع منهجه في التثبت والحكمة.',
+          en: 'Learn from his wisdom, seek his counsel in important matters, and emulate his deliberate approach.'
+        }
+      },
+      {
+        title: { ar: '2. يدري ولا يدري أنه يدري 🔔', en: '2. Knows & Doesn’t Know That He Knows 🔔' },
+        verdict: { ar: '«فهذا نائمٌ فأيقِظوه»', en: '“He is Asleep/Unaware — Wake him up!”' },
+        color: 'amber',
+        knowledge: { ar: 'يمتلك العلم والقدرة ✅', en: 'Possesses Knowledge & Skill ✅' },
+        awareness: { ar: 'غافل عن قيمة ما لديه ⚠️', en: 'Unaware of His Own Potential ⚠️' },
+        analysis: {
+          ar: 'شخص يمتلك المعرفة والمهارة والعقل السليم، لكنه إما متردد أو غافل أو يقلل من شأن نفسه فلا يوظف علمه كما ينبغي.',
+          en: 'A person who has knowledge, intellect, and skill, but is either hesitant, heedless, or underestimates himself—failing to utilize his gifts.'
+        },
+        action: {
+          ar: 'ذكّره بنعمة الله عليه، شجّعه، ونبّهه من غفلته حتى ينتفع الناس بعلمه.',
+          en: 'Remind him of his capabilities, encourage him, and wake him from his heedlessness so society benefits.'
+        }
+      },
+      {
+        title: { ar: '3. لا يدري ويدري أنه لا يدري 📚', en: '3. Doesn’t Know & Knows That He Doesn’t Know 📚' },
+        verdict: { ar: '«فهذا طالبُ علمٍ فعلِّموه»', en: '“He is a Seeker/Student — Teach him!”' },
+        color: 'sky',
+        knowledge: { ar: 'ينقصه العلم حالياً ❌', en: 'Currently Lacks Knowledge ❌' },
+        awareness: { ar: 'يعترف بجهله ويبحث عن الحق ✅', en: 'Humble & Aware of His Ignorance ✅' },
+        analysis: {
+          ar: 'اعتراف الإنسان بجهله هو أول خطوة في طريق الحكمة! هذا الشخص لا يتسرع ولا يفتي بغير علم، بل يسأل أهل الخبرة ويتعلم بتواضع.',
+          en: 'Recognizing one’s own ignorance is the very first step toward wisdom! This person doesn’t pretend to know; he asks experts and learns humbly.'
+        },
+        action: {
+          ar: 'علّمه برفق، وأرشده إلى الوسيلة الصحيحة، فسيصبح عالماً حكيماً بإذن الله.',
+          en: 'Teach him kindly and guide him to proper methods; his humility puts him on the path to becoming wise.'
+        }
+      },
+      {
+        title: { ar: '4. لا يدري ولا يدري أنه لا يدري 🤡', en: '4. Doesn’t Know & Doesn’t Know That He Doesn’t Know 🤡' },
+        verdict: { ar: '«فهذا أحمقٌ فاجتَنِبوه!»', en: '“He is a Fool — Avoid him!”' },
+        color: 'rose',
+        knowledge: { ar: 'يجهل الوسيلة الصحيحة ❌', en: 'Lacks Sound Comprehension ❌' },
+        awareness: { ar: 'يظن نفسه أذكى العقلاء ❌', en: 'Deluded by Overconfidence ❌' },
+        analysis: {
+          ar: 'هذا هو «الجهل المركب» وذروة الحماقة التي تحدث عنها ابن الجوزي! يجمع بين الجهل، والتسرع، والثقة الزائدة بالنفس. إذا نصحته غضب، وإذا منحته سلطة أفسد، وإذا صادقته ضرّك وهو يريد نفعك!',
+          en: 'This is "Compound Ignorance" and the peak of foolishness described by Ibn al-Jawzi! He combines ignorance, hastiness, and extreme overconfidence. If advised, he gets angry; if given power, he ruins things; if befriended, he harms you unintentionally!'
+        },
+        action: {
+          ar: 'اجتنبه ولا تجادله، واحذر من توليته المسؤوليات أو الاعتماد على مشورته.',
+          en: 'Avoid fruitless arguments with him, and beware of entrusting him with critical decisions or companionship.'
+        }
+      }
+    ];
+
+    // Interactive Quiz Questions Data (5 Scenarios based on the video)
+    const quizQuestions = [
+      {
+        q: {
+          ar: 'السؤال 1: بحسب تعريف الإمام ابن الجوزي في كتاب «أخبار الحمقى والمغفلين»، ما هو الجوهر الحقيقي للحماقة؟',
+          en: 'Question 1: According to Imam Ibn al-Jawzi in his book, what is the true core definition of foolishness?'
+        },
+        options: [
+          {
+            ar: 'فقدان العقل بالكامل وعدم القدرة على النطق أو التذكر.',
+            en: 'Complete loss of sanity and inability to speak or remember.',
+            correct: false
+          },
+          {
+            ar: 'إرادة الوصول إلى هدف صحيح، لكن باستخدام وسيلة خاطئة تماماً تناقض المنطق.',
+            en: 'Seeking a valid, correct goal, but using a completely wrong means that contradicts reality.',
+            correct: true
+          },
+          {
+            ar: 'عدم امتلاك منصب رفيع أو ثروة مالية كبيرة في المجتمع.',
+            en: 'Lacking a high social position or large financial wealth in society.',
+            correct: false
+          }
+        ],
+        explanation: {
+          ar: 'أحسنت! ابن الجوزي يوضح أن الأحمق غالباً ما يكون هدفه صحيحاً (مثل حفظ الطائر أو نفع الصديق)، لكن الكارثة تكمن في اختياره لوسيلة خاطئة تماماً!',
+          en: 'Spot on! Ibn al-Jawzi explains that a fool often has a valid goal (like keeping a bird or helping a friend), but the disaster lies in choosing a completely absurd method!'
+        }
+      },
+      {
+        q: {
+          ar: 'السؤال 2: لماذا يُعدّ «الأحمق» أخطر على المجتمع من «المجنون» كما ورد في الفيديو [00:02:50]؟',
+          en: 'Question 2: Why is "The Fool" much more dangerous to society than "The Madman" as explained in the video [00:02:50]?'
+        },
+        options: [
+          {
+            ar: 'لأن الأحمق يظهر بمظهر العقلاء، فقد يتولى مناصب كالقضاء أو الحكم فيحوّل حماقته إلى كارثة عامة.',
+            en: 'Because the fool appears normal and articulate, so he may be appointed as a judge, ruler, or scholar—turning his foolishness into a public crisis.',
+            correct: true
+          },
+          {
+            ar: 'لأن المجنون يمتلك أموالاً أكثر من الأحمق في المجتمع.',
+            en: 'Because the madman possesses more wealth than the fool in society.',
+            correct: false
+          },
+          {
+            ar: 'لا يوجد أي فرق بينهما في الأثر المجتمعي.',
+            en: 'There is no difference between them in terms of societal impact.',
+            correct: false
+          }
+        ],
+        explanation: {
+          ar: 'تحليل دقيق! المجنون معروف حاله فلا يوليه أحد مسؤولية، أما الأحمق فقد يخدع الناس بمظهره أو حفظه فينال سلطة يفسد بها دون قصد.',
+          en: 'Exact analysis! A madman is easily recognized and excused from authority, whereas a fool can attain high office and cause widespread damage.'
+        }
+      },
+      {
+        q: {
+          ar: 'السؤال 3: سمعتَ خبراً مقتضباً عن مشكلة في العمل، فقررتَ فوراً اتخاذ قرار حاسم دون سؤال أحد لأنك واثق 100% أنك لا تخطئ. أي علامات الحماقة اجتمعت هنا؟',
+          en: 'Question 3: You heard a brief rumor at work and immediately took a drastic decision without asking anyone because you are 100% sure you never err. Which signs of foolishness combined here?'
+        },
+        options: [
+          {
+            ar: 'التواضع المعرفي والتروي في دراسة العواقب.',
+            en: 'Intellectual humility and careful deliberation of consequences.',
+            correct: false
+          },
+          {
+            ar: 'التسرع قبل الفهم + الثقة الزائدة بالنفس.',
+            en: 'Hastiness before understanding + Excessive overconfidence.',
+            correct: true
+          },
+          {
+            ar: 'الزهد في الدنيا والترويح عن النفس.',
+            en: 'Asceticism and refreshing the soul from continuous rigor.',
+            correct: false
+          }
+        ],
+        explanation: {
+          ar: 'إجابة صحيحة! التسرع مع الثقة المفرطة بالنفس ورفض المشورة هما أخطر علامتين من العلامات الثلاث للحماقة.',
+          en: 'Correct! Hastiness combined with excessive overconfidence and refusing consultation are two of the deadliest signs of foolishness.'
+        }
+      },
+      {
+        q: {
+          ar: 'السؤال 4: لماذا حذّر ابن الجوزي بشدة من «صحبة الأحمق» حتى لو كان طيب النية ويحبك؟',
+          en: 'Question 4: Why did Ibn al-Jawzi strongly warn against "befriending a fool" even if he has good intentions and loves you?'
+        },
+        options: [
+          {
+            ar: 'لأنه يريد أن ينفعك فيضرك من حيث لا يشعر بسبب سوء تصرفه واختياره للوسيلة الخاطئة.',
+            en: 'Because he wants to benefit you, so he harms you unintentionally due to his poor judgment and wrong methods.',
+            correct: true
+          },
+          {
+            ar: 'لأنه يكره أصدقاءه ويتمنى لهم الشر دائماً.',
+            en: 'Because he secretly hates his friends and always wishes them harm.',
+            correct: false
+          },
+          {
+            ar: 'لأنه يقرأ الكثير من الكتب التاريخية.',
+            en: 'Because he reads too many historical books.',
+            correct: false
+          }
+        ],
+        explanation: {
+          ar: 'بالضبط! «إياك وصحبة الأحمق، فإنه يريد أن ينفعك فيضرك»؛ النية الطيبة لا تكفي إذا غاب العقل والحكمة.',
+          en: 'Exactly! "Beware of befriending a fool, for he wants to benefit you, so he harms you." Good intentions are dangerous when paired with foolish methods.'
+        }
+      },
+      {
+        q: {
+          ar: 'السؤال 5: في تقسيم أصناف الناس الأربعة، كيف نتعامل مع الشخص الذي «لا يدري، ويدري أنه لا يدري»؟',
+          en: 'Question 5: In the 4 Types of People matrix, how should we deal with someone who "Doesn’t know, and knows that he doesn’t know"?'
+        },
+        options: [
+          {
+            ar: 'فهذا أحمق فاجتنبوه.',
+            en: 'He is a fool — avoid him.',
+            correct: false
+          },
+          {
+            ar: 'فهذا طالب علم فعلّموه (لأنه متواضع ويعرف حدود معرفته).',
+            en: 'He is a seeker/student — teach him (because he is self-aware and humble).',
+            correct: true
+          },
+          {
+            ar: 'فهذا عالم فاتبعوه.',
+            en: 'He is a scholar — follow him.',
+            correct: false
+          }
+        ],
+        explanation: {
+          ar: 'رائع! من يعرف أنه لا يدري هو طالب علم صادق يمتلك الوعي الذاتي، وتعليمه يثمر حكمة وعلماً، بعكس من لا يدري ولا يدري أنه لا يدري.',
+          en: 'Wonderful! Someone who knows what they don’t know possesses self-awareness and humility; teaching them leads to true wisdom.'
+        }
+      }
+    ];
+
+    // Video Chapters Timeline Data
+    const videoChapters = [
+      {
+        time: '00:00',
+        seconds: 0,
+        sectionId: '#simulation-section',
+        title: { ar: 'قصة الأمير والطائر وأبواب المدينة', en: 'The Prince, The Bird & The City Gates' },
+        desc: { ar: 'المدخل القصصي الطريف الذي يلخص معنى الحماقة في قرار واحد.', en: 'The comical opening story summarizing foolishness in a single decree.' }
+      },
+      {
+        time: '00:45',
+        seconds: 45,
+        sectionId: '#reasons-section',
+        title: { ar: 'قصة تأليف كتاب أخبار الحمقى والمغفلين', en: 'Why Ibn al-Jawzi Wrote the Book' },
+        desc: { ar: 'الأسباب الثلاثة التي دفعت إماماً عظيماً لتأليف هذا الكتاب قبل 800 سنة.', en: 'The 3 wise reasons a great scholar wrote this book 800 years ago.' }
+      },
+      {
+        time: '02:04',
+        seconds: 124,
+        sectionId: '#anatomy-section',
+        title: { ar: 'التعريف الدقيق للحماقة والفرق عن الجنون', en: 'Definition of Foolishness & Fool vs. Madman' },
+        desc: { ar: 'الهدف الصحيح + الوسيلة الخاطئة، ولماذا الأحمق أخطر على المجتمع.', en: 'Valid Goal + Wrong Means, and why the fool poses a greater societal threat.' }
+      },
+      {
+        time: '03:43',
+        seconds: 223,
+        sectionId: '#strata-section',
+        title: { ar: 'مفاجأة الكتاب: طبقات الحمقى في المجتمع', en: 'Social Strata: Rulers, Judges, Scholars & More' },
+        desc: { ar: 'كيف يقع الأمراء والقضاة والعلماء والتجار والشعراء والزهاد في الحماقة.', en: 'How high status and outward knowledge do not prevent foolishness.' }
+      },
+      {
+        time: '04:35',
+        seconds: 275,
+        sectionId: '#signs-section',
+        title: { ar: 'العلامات الثلاث للحماقة وخطورة صحبة الأحمق', en: 'The 3 Signs & Warning Against Befriending Fools' },
+        desc: { ar: 'سوء الفهم، التسرع، الثقة الزائدة، ولماذا يضرك الصديق الأحمق.', en: 'Misunderstanding, hastiness, overconfidence, and the foolish friend.' }
+      },
+      {
+        time: '05:22',
+        seconds: 322,
+        sectionId: '#matrix-section',
+        title: { ar: 'أصناف الناس الأربعة وخاتمة الحكمة', en: 'The 4 Types of People & Closing Wisdom' },
+        desc: { ar: 'مصفوفة المعرفة والوعي، والدعاء الختامي بنعمة العقل والحكمة.', en: 'The Knowledge/Awareness matrix and the final prayer for wisdom.' }
+      }
+    ];
+
+    /* ==========================================
+       1. INITIALIZATION & THEME / LANGUAGE HANDLERS
+       ========================================== */
+    window.addEventListener('DOMContentLoaded', () => {
+      updateThemeIcon();
+      renderStrataSection();
+      selectMatrixQuadrant(0);
+      renderQuiz();
+      renderChapters();
+      applyTranslations();
+    });
+
+    function toggleTheme() {
+      const htmlEl = document.documentElement;
+      htmlEl.classList.toggle('dark');
+      updateThemeIcon();
+      const isDark = htmlEl.classList.contains('dark');
+      showToast(
+        currentLang === 'ar'
+          ? (isDark ? 'تم تفعيل الوضع الليلي (الداكن) 🌙' : 'تم تفعيل الوضع النهاري (الفاتح) ☀️')
+          : (isDark ? 'Dark Mode Activated 🌙' : 'Light Mode Activated ☀️')
+      );
+    }
+
+    function updateThemeIcon() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const iconEl = document.getElementById('theme-icon');
+      if (iconEl) {
+        iconEl.className = isDark ? 'fa-solid fa-sun text-lg text-amber-400' : 'fa-solid fa-moon text-lg text-slate-700';
+      }
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'ar' ? 'en' : 'ar';
+      const htmlEl = document.documentElement;
+      htmlEl.lang = currentLang;
+      htmlEl.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+      // Update toggle button label
+      const btnText = document.getElementById('lang-toggle-text');
+      if (btnText) {
+        btnText.textContent = currentLang === 'ar' ? 'English' : 'العربية';
+      }
+
+      applyTranslations();
+      renderStrataSection();
+      selectMatrixQuadrant(currentMatrixIndex);
+      renderQuiz();
+      renderChapters();
+      resetBirdSim();
+
+      showToast(
+        currentLang === 'ar'
+          ? 'تم التبديل إلى اللغة العربية بنجاح 🌍'
+          : 'Switched to English successfully 🌍'
+      );
+    }
+
+    function applyTranslations() {
+      const dict = i18n[currentLang];
+      // Update elements with data-i18n attribute
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+
+      const navBadge = document.getElementById('nav-badge');
+      const navTitle = document.getElementById('nav-title');
+      if (navBadge) navBadge.textContent = dict.nav_badge;
+      if (navTitle) navTitle.textContent = dict.nav_title;
+    }
+
+    /* ==========================================
+       2. PRINCE & BIRD SIMULATION LOGIC [00:00]
+       ========================================== */
+    function runBirdSimulation(choice) {
+      const birdEl = document.getElementById('sim-bird');
+      const cageOverlay = document.getElementById('sim-cage-overlay');
+      const gateOverlay = document.getElementById('city-gate-overlay');
+      const gateStatusLabel = document.getElementById('gate-status-label');
+      const gateLockIcon = document.getElementById('gate-lock-icon');
+      const skyStatusBadge = document.getElementById('sky-status-badge');
+      const birdCaption = document.getElementById('bird-caption');
+      const methodScore = document.getElementById('sim-method-score');
+      const feedbackText = document.getElementById('sim-feedback-text');
+
+      if (choice === 'foolish') {
+        // Prince closes city gates; bird flies away into the open sky!
+        cageOverlay.classList.add('hidden');
+        birdEl.classList.remove('bird-floating');
+        birdEl.classList.add('bird-escaped');
+        gateOverlay.classList.remove('opacity-0');
+        gateOverlay.classList.add('opacity-100');
+
+        if (currentLang === 'ar') {
+          gateStatusLabel.textContent = 'أبواب المدينة: مغلقة بأمر الأمير! (توقفت التجارة والحياة) 🚫';
+          gateLockIcon.textContent = 'مغلقة 🔒';
+          gateLockIcon.className = 'px-2 py-0.5 rounded bg-red-500/30 text-red-300 text-xs font-bold';
+          skyStatusBadge.textContent = 'طار الطائر في الفضاء المفتوح! 🕊️💨';
+          birdCaption.textContent = 'الطائر لم يخرج من الباب أصلاً بل طار في السماء!';
+          methodScore.textContent = '0% (وسيلة خاطئة تماماً 🤡)';
+          methodScore.className = 'font-black text-rose-400';
+          feedbackText.innerHTML = '<strong class="text-rose-300">تحليل ابن الجوزي:</strong> الهدف كان صحيحاً (الاحتفاظ بالطائر)، لكن الوسيلة (إغلاق أبواب المدينة) كانت في قمة الحماقة لأن الطائر يطير في الجو ولا يمشي عبر البوابات!';
+        } else {
+          gateStatusLabel.textContent = 'City Gates: Locked by Decree! (City Paralyzed) 🚫';
+          gateLockIcon.textContent = 'Locked 🔒';
+          gateLockIcon.className = 'px-2 py-0.5 rounded bg-red-500/30 text-red-300 text-xs font-bold';
+          skyStatusBadge.textContent = 'The Bird Flew Away into the Sky! 🕊️💨';
+          birdCaption.textContent = 'The bird didn’t use the door—it flew over the walls!';
+          methodScore.textContent = '0% (Completely Wrong Means 🤡)';
+          methodScore.className = 'font-black text-rose-400';
+          feedbackText.innerHTML = '<strong class="text-rose-300">Ibn al-Jawzi’s Analysis:</strong> The goal was valid (keep the bird), but the means (closing city gates) was utter foolishness because birds fly in the sky rather than walking through city gates!';
+        }
+      } else {
+        // Wise choice: Use a birdcage and seeds
+        birdEl.classList.remove('bird-escaped');
+        birdEl.classList.add('bird-floating');
+        cageOverlay.classList.remove('hidden');
+        gateOverlay.classList.remove('opacity-100');
+        gateOverlay.classList.add('opacity-0');
+
+        if (currentLang === 'ar') {
+          gateStatusLabel.textContent = 'أبواب المدينة: مفتوحة والحياة تسير بشكل طبيعي ✅';
+          gateLockIcon.textContent = 'مفتوحة 🔓';
+          gateLockIcon.className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold';
+          skyStatusBadge.textContent = 'تم الإمساك بالطائر بحكمة 🎯';
+          birdCaption.textContent = 'الطائر يأكل الحبوب داخل القفص بأمان';
+          methodScore.textContent = '100% (وسيلة حكيمة ومناسبة 🌟)';
+          methodScore.className = 'font-black text-emerald-400';
+          feedbackText.innerHTML = '<strong class="text-emerald-300">تحليل الحكمة:</strong> العاقل يربط الأسباب بمسبباتها؛ هدفك صيد طائر صغير، إذن وسيلتك قفص وشبكة وحبوب دون إيذاء مدينة كاملة!';
+        } else {
+          gateStatusLabel.textContent = 'City Gates: Open & Citizens Moving Freely ✅';
+          gateLockIcon.textContent = 'Open 🔓';
+          gateLockIcon.className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold';
+          skyStatusBadge.textContent = 'Bird Safely Caught with Wisdom 🎯';
+          birdCaption.textContent = 'The bird is eating seeds safely inside the cage';
+          methodScore.textContent = '100% (Wise & Appropriate Means 🌟)';
+          methodScore.className = 'font-black text-emerald-400';
+          feedbackText.innerHTML = '<strong class="text-emerald-300">Wisdom Analysis:</strong> A wise person matches the means to the nature of the goal—catching a bird with seeds and a cage without paralyzing a whole city!';
+        }
+      }
+    }
+
+    function resetBirdSim() {
+      const birdEl = document.getElementById('sim-bird');
+      const cageOverlay = document.getElementById('sim-cage-overlay');
+      const gateOverlay = document.getElementById('city-gate-overlay');
+      const gateStatusLabel = document.getElementById('gate-status-label');
+      const gateLockIcon = document.getElementById('gate-lock-icon');
+      const skyStatusBadge = document.getElementById('sky-status-badge');
+      const birdCaption = document.getElementById('bird-caption');
+      const methodScore = document.getElementById('sim-method-score');
+      const feedbackText = document.getElementById('sim-feedback-text');
+
+      birdEl.classList.remove('bird-escaped');
+      birdEl.classList.add('bird-floating');
+      cageOverlay.classList.add('hidden');
+      gateOverlay.classList.remove('opacity-100');
+      gateOverlay.classList.add('opacity-0');
+
+      if (currentLang === 'ar') {
+        gateStatusLabel.textContent = 'أبواب المدينة: مفتوحة للتجار والناس 🚶‍♂️🐪';
+        gateLockIcon.textContent = 'مفتوحة 🔓';
+        gateLockIcon.className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold';
+        skyStatusBadge.textContent = 'السماء مفتوحة 🌤️';
+        birdCaption.textContent = 'الطائر يقف على الشجرة';
+        methodScore.textContent = 'بانتظار قرارك...';
+        methodScore.className = 'font-bold text-amber-400';
+        feedbackText.textContent = i18n.ar.sim_default_feedback;
+      } else {
+        gateStatusLabel.textContent = 'City Gates: Open for Merchants & Citizens 🚶‍♂️🐪';
+        gateLockIcon.textContent = 'Open 🔓';
+        gateLockIcon.className = 'px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs font-bold';
+        skyStatusBadge.textContent = 'Open Sky 🌤️';
+        birdCaption.textContent = 'The bird is perched on the tree';
+        methodScore.textContent = 'Awaiting your decree...';
+        methodScore.className = 'font-bold text-amber-400';
+        feedbackText.textContent = i18n.en.sim_default_feedback;
+      }
+    }
+
+    function pokeBird() {
+      showToast(
+        currentLang === 'ar'
+          ? '🐦 الطائر يقول: حتى أنا أعرف أن البوابات لا تمنع الطيران!'
+          : '🐦 The bird says: Even I know city gates don’t stop wings!'
+      );
+    }
+
+    /* ==========================================
+       3. SOCIAL STRATA EXPLORER RENDERER
+       ========================================== */
+    function renderStrataSection() {
+      const tabsContainer = document.getElementById('strata-tabs');
+      const displayContainer = document.getElementById('strata-display');
+      if (!tabsContainer || !displayContainer) return;
+
+      // Render Filter Buttons
+      tabsContainer.innerHTML = strataData.map((item, idx) => {
+        const isActive = idx === currentStratumIndex;
+        return `
+          <button onclick="selectStratum(${idx})" class="px-4 py-2.5 rounded-2xl font-extrabold text-xs sm:text-sm flex items-center gap-2 transition shadow-sm ${
+            isActive
+              ? 'bg-gradient-to-r from-amber-500 to-orange-600 text-white shadow-amber-500/25 scale-105'
+              : 'bg-white dark:bg-slate-900 hover:bg-amber-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-800'
+          }">
+            <span class="text-base">${item.icon}</span>
+            <span>${item.title[currentLang]}</span>
+          </button>
+        `;
+      }).join('');
+
+      // Render Active Stratum Content
+      const active = strataData[currentStratumIndex];
+      const labels = currentLang === 'ar'
+        ? {
+            storyHeader: '📖 من طرائفهم في الكتاب والفيديو:',
+            goalHeader: '🎯 الهدف الذي أرادوه:',
+            meansHeader: '❌ الوسيلة الخاطئة التي استخدموها:',
+            lessonHeader: '💡 الدرس المستفاد:'
+          }
+        : {
+            storyHeader: '📖 From Their Stories in the Book & Video:',
+            goalHeader: '🎯 The Valid Goal They Wanted:',
+            meansHeader: '❌ The Foolish Means They Used:',
+            lessonHeader: '💡 Key Takeaway:'
+          };
+
+      displayContainer.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-300 text-xs font-extrabold border border-amber-500/30">
+              <span>${active.icon}</span>
+              <span>${active.tag[currentLang]}</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+              ${active.title[currentLang]}
+            </h3>
+            <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+              ${active.summary[currentLang]}
+            </p>
+            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-xs sm:text-sm">
+              <span class="font-black text-amber-700 dark:text-amber-300 block mb-1">${labels.lessonHeader}</span>
+              <span class="text-slate-700 dark:text-slate-200 font-semibold">${active.lesson[currentLang]}</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-4">
+            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 space-y-2">
+              <div class="text-xs font-extrabold text-indigo-600 dark:text-indigo-400 uppercase">${labels.storyHeader}</div>
+              <p class="text-slate-800 dark:text-slate-100 text-sm sm:text-base leading-relaxed font-medium">
+                ${active.story[currentLang]}
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 space-y-1">
+                <div class="text-xs font-black text-emerald-700 dark:text-emerald-300">${labels.goalHeader}</div>
+                <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200">${active.goal[currentLang]}</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-rose-500/10 border border-rose-500/30 space-y-1">
+                <div class="text-xs font-black text-rose-700 dark:text-rose-300">${labels.meansHeader}</div>
+                <p class="text-xs sm:text-sm text-slate-700 dark:text-slate-200">${active.means[currentLang]}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function selectStratum(index) {
+      currentStratumIndex = index;
+      renderStrataSection();
+    }
+
+    /* ==========================================
+       4. 2x2 MATRIX INSPECTOR LOGIC [00:05:22]
+       ========================================== */
+    function selectMatrixQuadrant(index) {
+      currentMatrixIndex = index;
+      const item = matrixData[index];
+
+      // Highlight active button
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`matrix-btn-${i}`);
+        if (!btn) continue;
+        if (i === index) {
+          btn.className = 'matrix-quadrant text-start p-5 rounded-2xl border-2 border-amber-500 bg-amber-500/15 dark:bg-amber-500/10 shadow-lg scale-[1.02] transition flex flex-col justify-between gap-4';
+        } else {
+          btn.className = 'matrix-quadrant text-start p-5 rounded-2xl border-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/40 opacity-85 hover:opacity-100 transition flex flex-col justify-between gap-4';
+        }
+      }
+
+      const inspector = document.getElementById('matrix-inspector');
+      if (!inspector) return;
+
+      const labels = currentLang === 'ar'
+        ? {
+            kLabel: 'مستوى المعرفة:',
+            aLabel: 'مستوى الوعي بالذات:',
+            analysisTitle: 'التحليل النفسي والمعرفي:',
+            actionTitle: 'كيف تتعامل معه؟'
+          }
+        : {
+            kLabel: 'Knowledge Level:',
+            aLabel: 'Self-Awareness Level:',
+            analysisTitle: 'Psychological & Cognitive Analysis:',
+            actionTitle: 'How to Deal With Them:'
+          };
+
+      inspector.innerHTML = `
+        <div class="space-y-4">
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-extrabold">
+            ${item.verdict[currentLang]}
+          </div>
+          <h3 class="text-xl sm:text-2xl font-black text-white">
+            ${item.title[currentLang]}
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-xs">
+            <div class="p-3 rounded-xl bg-slate-800 border border-slate-700">
+              <span class="text-slate-400 block mb-0.5">${labels.kLabel}</span>
+              <span class="font-bold text-white">${item.knowledge[currentLang]}</span>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-800 border border-slate-700">
+              <span class="text-slate-400 block mb-0.5">${labels.aLabel}</span>
+              <span class="font-bold text-white">${item.awareness[currentLang]}</span>
+            </div>
+          </div>
+
+          <div class="space-y-1 pt-2">
+            <div class="text-xs font-bold text-amber-400 uppercase">${labels.analysisTitle}</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              ${item.analysis[currentLang]}
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/20 to-indigo-500/20 border border-amber-500/30 space-y-1">
+          <div class="text-xs font-black text-amber-300">${labels.actionTitle}</div>
+          <p class="text-xs sm:text-sm text-white font-semibold">
+            ${item.action[currentLang]}
+          </p>
+        </div>
+      `;
+    }
+
+    /* ==========================================
+       5. INTERACTIVE WISDOM QUIZ LOGIC
+       ========================================== */
+    function renderQuiz() {
+      const container = document.getElementById('quiz-body');
+      const scoreCounter = document.getElementById('quiz-score-counter');
+      if (!container) return;
+
+      scoreCounter.textContent = `${quizScore} / ${quizQuestions.length}`;
+
+      container.innerHTML = quizQuestions.map((item, qIdx) => {
+        const answeredObj = quizAnswered[qIdx];
+        return `
+          <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+            <h3 class="font-extrabold text-base sm:text-lg text-slate-900 dark:text-white">
+              ${item.q[currentLang]}
+            </h3>
+            <div class="grid grid-cols-1 gap-2.5">
+              ${item.options.map((opt, oIdx) => {
+                let btnStyle = 'bg-slate-50 dark:bg-slate-800/70 hover:bg-amber-50 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200';
+                let iconHtml = '<i class="fa-regular fa-circle text-slate-400"></i>';
+
+                if (answeredObj !== undefined) {
+                  if (opt.correct) {
+                    btnStyle = 'bg-emerald-500/15 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold';
+                    iconHtml = '<i class="fa-solid fa-circle-check text-emerald-500 text-lg"></i>';
+                  } else if (answeredObj.selected === oIdx && !opt.correct) {
+                    btnStyle = 'bg-rose-500/15 border-rose-500 text-rose-900 dark:text-rose-200';
+                    iconHtml = '<i class="fa-solid fa-circle-xmark text-rose-500 text-lg"></i>';
+                  } else {
+                    btnStyle = 'opacity-50 bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-800';
+                  }
+                }
+
+                return `
+                  <button
+                    onclick="answerQuiz(${qIdx}, ${oIdx})"
+                    ${answeredObj !== undefined ? 'disabled' : ''}
+                    class="w-full p-3.5 rounded-xl border text-start text-xs sm:text-sm flex items-center justify-between gap-3 transition ${btnStyle}"
+                  >
+                    <span>${opt[currentLang]}</span>
+                    ${iconHtml}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+            ${
+              answeredObj !== undefined
+                ? `<div class="p-3.5 rounded-xl text-xs sm:text-sm ${
+                    answeredObj.isCorrect
+                      ? 'bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30'
+                      : 'bg-amber-500/10 text-amber-800 dark:text-amber-300 border border-amber-500/30'
+                  }">
+                    ${item.explanation[currentLang]}
+                  </div>`
+                : ''
+            }
+          </div>
+        `;
+      }).join('');
+    }
+
+    function answerQuiz(qIdx, oIdx) {
+      if (quizAnswered[qIdx] !== undefined) return;
+      const isCorrect = quizQuestions[qIdx].options[oIdx].correct;
+      quizAnswered[qIdx] = { selected: oIdx, isCorrect };
+      if (isCorrect) quizScore++;
+      renderQuiz();
+
+      // Check if all questions are answered
+      const answeredCount = quizAnswered.filter(Boolean).length;
+      if (answeredCount === quizQuestions.length) {
+        const msg = currentLang === 'ar'
+          ? `🎉 أتممت الاختبار! نتيجتك النهائية: ${quizScore} من ${quizQuestions.length}`
+          : `🎉 Quiz Completed! Your final score: ${quizScore} / ${quizQuestions.length}`;
+        showToast(msg);
+      }
+    }
+
+    function resetQuiz() {
+      quizScore = 0;
+      quizAnswered = [];
+      renderQuiz();
+      showToast(
+        currentLang === 'ar' ? 'تمت إعادة ضبط الاختبار بنجاح 🔄' : 'Quiz reset successfully 🔄'
+      );
+    }
+
+    /* ==========================================
+       6. VIDEO CHAPTERS RENDERER
+       ========================================== */
+    function renderChapters() {
+      const grid = document.getElementById('chapters-grid');
+      if (!grid) return;
+
+      const btnJumpText = currentLang === 'ar' ? 'استعراض في التطبيق' : 'Explore in App';
+      const btnYtText = currentLang === 'ar' ? 'مشاهدة اللحظة' : 'Watch Timestamp';
+
+      grid.innerHTML = videoChapters.map(ch => `
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/80 flex flex-col justify-between gap-4 hover:border-amber-500/50 transition">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-700 dark:text-amber-300 font-mono font-black text-xs">
+                ⏱️ ${ch.time}
+              </span>
+              <a href="https://youtu.be/s1qOKHPVbrE?t=${ch.seconds}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-red-500 hover:underline flex items-center gap-1">
+                <i class="fa-brands fa-youtube"></i>
+                <span>${btnYtText}</span>
+              </a>
+            </div>
+            <h3 class="font-extrabold text-slate-900 dark:text-white text-sm sm:text-base">
+              ${ch.title[currentLang]}
+            </h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              ${ch.desc[currentLang]}
+            </p>
+          </div>
+          <a href="${ch.sectionId}" class="w-full py-2 px-3 rounded-xl bg-white dark:bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-center text-xs font-bold border border-slate-200 dark:border-slate-700 transition">
+            ${btnJumpText}
+          </a>
+        </div>
+      `).join('');
+    }
+
+    /* ==========================================
+       7. CUSTOM TOAST NOTIFICATION SYSTEM
+       ========================================== */
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+
+      const toast = document.createElement('div');
+      toast.className = 'pointer-events-auto px-4 py-3 rounded-2xl bg-slate-900 dark:bg-amber-500 text-white dark:text-slate-950 font-bold text-xs sm:text-sm shadow-xl border border-slate-700 dark:border-amber-400 flex items-center justify-between gap-3 transform transition-all duration-300 translate-y-2 opacity-0';
+      toast.innerHTML = `
+        <span>${message}</span>
+        <button onclick="this.parentElement.remove()" class="opacity-75 hover:opacity-100">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      `;
+
+      container.appendChild(toast);
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        if (toast.parentElement) {
+          toast.classList.add('opacity-0', 'translate-y-2');
+          setTimeout(() => toast.remove(), 300);
+        }
+      }, 3200);
+    }
+  </script>
+</body>
+</html>
